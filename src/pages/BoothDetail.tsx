@@ -87,7 +87,8 @@ export default function BoothDetail() {
         rawResult: currentContest
       };
 
-    });
+    })
+      .filter((row): row is NonNullable<typeof row> => row !== undefined);;
 
     // Return in reverse chronological order (newest first) for the table view
     return computedRows
