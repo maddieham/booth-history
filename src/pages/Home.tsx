@@ -1,26 +1,28 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ChevronRight } from 'lucide-react';
-import boothsData from '../data/booths.json';
+import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
-import type { PollingPlace } from '../types';
+
 
 export default function Home() {
   const [search, setSearch] = useState('');
 
   const [showSpecialCategories, setShowSpecialCategories] = useState(false);
 
-  const booths = boothsData as PollingPlace[];
+  const booths = useMemo(() => getGroupedBooths(), []);
   const totalElectionsCount = electionsData.length;
 
   // Filter and sort booths by latest Greens vote percentage descending
   const filteredBooths = useMemo(() => {
+    const searchLower = search.toLowerCase();
     const list = booths.filter(booth => {
       if (!showSpecialCategories && booth.type && booth.type !== 'ordinary') {
         return false;
       }
-      return booth.name.toLowerCase().includes(search.toLowerCase()) ||
-        booth.suburb.toLowerCase().includes(search.toLowerCase());
+      return booth.name.toLowerCase().includes(searchLower) ||
+        booth.suburb.toLowerCase().includes(searchLower) ||
+        (booth.rawNames?.some(rawName => rawName.toLowerCase().includes(searchLower)) ?? false);
     });
 
     return list.sort((a, b) => {

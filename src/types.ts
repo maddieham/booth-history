@@ -16,9 +16,16 @@ export type ContestResult = {
   votes: number;
   percentage: number;         // first preference %
   division?: string;          // electorate or ward name at time of election for this booth
+  boothName?: string;
 };
 
 export type PollingPlaceType = "ordinary" | "pre-poll" | "postal" | "absent" | "other-dec";
+
+export type BoothGroup = {
+  slug: string;           // e.g. "tighes-hill"
+  displayName: string;    // e.g. "Tighes Hill Public"
+  rawNames: string[];     // e.g. ["Tighes Hill Public", "Newcastle TAFE"]
+};
 
 export type PollingPlace = {
   id: string;
@@ -30,4 +37,5 @@ export type PollingPlace = {
   lng: number;
   results: ContestResult[];    // all historical results, all election types
   type?: PollingPlaceType;
+  rawNames?: string[];
 };

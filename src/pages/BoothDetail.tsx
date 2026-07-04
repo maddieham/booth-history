@@ -11,16 +11,43 @@ import {
   ResponsiveContainer,
   Legend
 } from 'recharts';
+import boothGroupsData from '../data/booth-groups.json';
 import boothsData from '../data/booths.json';
 import electionsData from '../data/elections.json';
-import type { PollingPlace, Election } from '../types';
+import type { PollingPlace, Election, BoothGroup } from '../types';
 
 export default function BoothDetail() {
   const { id } = useParams<{ id: string }>();
 
-  const booth = useMemo(() => {
-    return (boothsData as PollingPlace[]).find(b => b.id === id);
+  const group = useMemo(() => {
+    return (boothGroupsData as BoothGroup[]).find(g => g.slug === id);
   }, [id]);
+
+  const booth = useMemo(() => {
+    if (group) {
+      const rawBooths = (boothsData as PollingPlace[]).filter(b => group.rawNames.includes(b.name));
+      const combinedResults = rawBooths.flatMap(b => b.results.map(r => ({ ...r, boothName: b.name })));
+      return {
+        id: group.slug,
+        name: group.displayName,
+        suburb: rawBooths[0]?.suburb || '',
+        division: rawBooths[0]?.division || '',
+        lga: rawBooths[0]?.lga,
+        lat: rawBooths[0]?.lat || 0,
+        lng: rawBooths[0]?.lng || 0,
+        results: combinedResults
+      } as PollingPlace;
+    }
+    // Fallback if accessed by old ID
+    const singleBooth = (boothsData as PollingPlace[]).find(b => b.id === id);
+    if (singleBooth) {
+      return {
+        ...singleBooth,
+        results: singleBooth.results.map(r => ({ ...r, boothName: singleBooth.name }))
+      };
+    }
+    return undefined;
+  }, [id, group]);
 
   const electionsMap = useMemo(() => {
     const map = new Map<string, Election>();
@@ -56,7 +83,10 @@ export default function BoothDetail() {
 
       // Group votes by major blocks
       const allResultsForElectionAndContest = booth.results.filter(
-        r => r.electionId === currentContest.electionId && r.contestName === currentContest.contestName
+        r => r.electionId === currentContest.electionId &&
+             r.contestName === currentContest.contestName &&
+             r.boothName === currentContest.boothName &&
+             (r.division || currentElection?.division) === (currentContest.division || currentElection?.division)
       );
 
       const grn = allResultsForElectionAndContest.find(r => r.party === 'GRN')?.votes || 0;
@@ -84,7 +114,8 @@ export default function BoothDetail() {
         oth,
         othPct: parseFloat(((oth / total) * 100).toFixed(2)),
         total,
-        rawResult: currentContest
+        rawResult: currentContest,
+        boothName: currentContest.boothName || booth.name
       };
 
     })
@@ -101,12 +132,42 @@ export default function BoothDetail() {
     return [...tableData]
       .sort((a, b) => a.date.localeCompare(b.date))
       .map(row => ({
-        name: row.division + ' - ' + row.electionName.replace(' Election', '').replace(' NSW State', ' State'),
+        key: `${row.division}-${row.electionId}-${row.boothName}`,
+        electionName: row.electionName,
+        division: row.division,
+        boothName: row.boothName,
         'Greens %': row.grnPct,
         'ALP %': row.alpPct || null,
         'LNP %': row.lnpPct || null,
       }));
   }, [tableData]);
+
+  const formatChartLabel = (value: any) => {
+    if (typeof value !== 'string') return '';
+    const item = chartData.find(d => d.key === value);
+    if (!item) return value;
+    
+    let label = item.electionName.replace(' Election', '').replace(' NSW State', ' State');
+    
+    // Check if there are other data points in chartData for the same election
+    const duplicates = chartData.filter(d => 
+      d.electionName.replace(' Election', '').replace(' NSW State', ' State') === label
+    );
+    
+    if (duplicates.length > 1) {
+      const hasMultipleDivisions = new Set(duplicates.map(d => d.division)).size > 1;
+      const hasMultipleBooths = new Set(duplicates.map(d => d.boothName)).size > 1;
+      
+      const suffixes = [];
+      if (hasMultipleDivisions) suffixes.push(item.division);
+      if (hasMultipleBooths && booth && item.boothName !== booth.name) suffixes.push(item.boothName);
+      
+      if (suffixes.length > 0) {
+        label += ` (${suffixes.join(' - ')})`;
+      }
+    }
+    return label;
+  };
 
   if (!booth) {
     return (
@@ -132,6 +193,11 @@ export default function BoothDetail() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 mb-1">{booth.name}</h1>
+          {group && group.rawNames.length > 1 && (
+            <p className="text-sm text-slate-500 mb-2">
+              Also known as: {group.rawNames.filter(n => n !== group.displayName).join(', ')}
+            </p>
+          )}
           {/* <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500">
                 <span className="flex items-center gap-1">
                   <MapPin className="w-4 h-4 text-slate-400" />
@@ -156,11 +222,12 @@ export default function BoothDetail() {
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                <XAxis dataKey="name" stroke="#64748b" fontSize={11} tickLine={false} />
+                <XAxis dataKey="key" stroke="#64748b" fontSize={11} tickLine={false} tickFormatter={formatChartLabel} />
                 <YAxis stroke="#64748b" fontSize={11} tickLine={false} domain={[0, 'auto']} />
                 <Tooltip
                   contentStyle={{ backgroundColor: '#ffffff', borderColor: '#cbd5e1', color: '#0f172a' }}
                   labelClassName="text-slate-500 font-bold"
+                  labelFormatter={formatChartLabel}
                 />
                 <Legend verticalAlign="top" height={36} wrapperStyle={{ fontSize: '12px' }} />
                 <Line
@@ -219,11 +286,13 @@ export default function BoothDetail() {
                   <tr key={`${r.electionId}-${r.contestName}-${idx}`} className="hover:bg-slate-50/50">
                     <td className="px-5 py-4">
                       <div className="font-semibold text-slate-800">
-                        <Link to={`/election/${r.electionId}?`} className="hover:text-greens-600 transition-colors">
+                        <Link to={`/election/${r.electionId}?contest=${`${r.contestName}-${r.division}`.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-greens-600 transition-colors">
                           {r.division} - {r.electionName}
                         </Link>
                       </div>
                       <div className="text-xs text-slate-500 flex items-center gap-1.5 mt-0.5">
+                        <span>{r.boothName}</span>
+                        <span>•</span>
                         <span>{r.date}</span>
                       </div>
                     </td>

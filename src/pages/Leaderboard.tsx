@@ -11,9 +11,9 @@ import { ArrowUpDown, Award, Filter, Search, ChevronLeft, ChevronRight } from 'l
 //   Tooltip,
 //   Legend,
 // } from 'recharts';
-import boothsData from '../data/booths.json';
+import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
-import type { PollingPlace, Election } from '../types';
+import type { Election } from '../types';
 
 type LeaderboardRow = {
   boothId: string;
@@ -28,6 +28,7 @@ type LeaderboardRow = {
   division: string;
   greensPercentage: number;
   greensVotes: number;
+  totalVotes: number;
   boothType?: string;
   swing: number | null;
   divisionChanged: boolean;
@@ -45,7 +46,7 @@ export default function Leaderboard() {
   const [yearMax, setYearMax] = useState<string>('2026');
 
   // Sorting State
-  const [sortField, setSortField] = useState<'percentage' | 'swing' | 'name' | 'year'>('percentage');
+  const [sortField, setSortField] = useState<'percentage' | 'swing' | 'name' | 'year' | 'votes' | 'totalVotes'>('percentage');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
 
   // Pagination State
@@ -63,7 +64,7 @@ export default function Leaderboard() {
   // Flatten booths data into one row per Greens contest
   const flatData: LeaderboardRow[] = useMemo(() => {
     const rows: LeaderboardRow[] = [];
-    const booths = boothsData as PollingPlace[];
+    const booths = getGroupedBooths();
 
     booths.forEach(booth => {
       if (!showSpecialCategories && booth.type && booth.type !== 'ordinary') {
@@ -114,6 +115,7 @@ export default function Leaderboard() {
           division: contest.division || election.division,
           greensPercentage: contest.percentage,
           greensVotes: contest.votes,
+          totalVotes: contest.percentage > 0 ? Math.round((contest.votes / contest.percentage) * 100) : 0,
           boothType: booth.type,
           swing,
           divisionChanged
@@ -123,6 +125,20 @@ export default function Leaderboard() {
 
     return rows;
   }, [electionsMap, showSpecialCategories]);
+
+  // Detect booths with multiple contests in the same election
+  const multiContestKeys = useMemo(() => {
+    const counts = new Map<string, number>();
+    flatData.forEach(r => {
+      const key = `${r.boothId}||${r.electionId}`;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    });
+    const set = new Set<string>();
+    counts.forEach((count, key) => {
+      if (count > 1) set.add(key);
+    });
+    return set;
+  }, [flatData]);
 
   // List of unique LGAs for filter dropdown
   const lgas = useMemo(() => {
@@ -149,8 +165,7 @@ export default function Leaderboard() {
       const matchesYearMin = yearMin ? year >= parseInt(yearMin) : true;
       const matchesYearMax = yearMax ? year <= parseInt(yearMax) : true;
 
-      const totalVotes = row.greensPercentage > 0 ? Math.round((row.greensVotes / row.greensPercentage) * 100) : 0;
-      const matchesSmallBooths = !hideSmallBooths || totalVotes >= 100;
+      const matchesSmallBooths = !hideSmallBooths || row.totalVotes >= 100;
 
       return matchesType && matchesLga && matchesDivision && matchesSuburb && matchesYearMin && matchesYearMax && matchesSmallBooths;
     });
@@ -194,6 +209,14 @@ export default function Leaderboard() {
         comparison = a.boothName.localeCompare(b.boothName);
       } else if (sortField === 'year') {
         comparison = a.electionYear - b.electionYear;
+      } else if (sortField === 'votes') {
+        const votesA = parseInt(String(a.greensVotes || '').replace(/,/g, '')) || 0;
+        const votesB = parseInt(String(b.greensVotes || '').replace(/,/g, '')) || 0;
+        comparison = votesA - votesB;
+      } else if (sortField === 'totalVotes') {
+        const totalA = parseInt(String(a.totalVotes || '').replace(/,/g, '')) || 0;
+        const totalB = parseInt(String(b.totalVotes || '').replace(/,/g, '')) || 0;
+        comparison = totalA - totalB;
       }
 
       return sortOrder === 'desc' ? -comparison : comparison;
@@ -209,7 +232,7 @@ export default function Leaderboard() {
 
   const totalPages = Math.ceil(sortedRows.length / rowsPerPage);
 
-  const handleSort = (field: 'percentage' | 'swing' | 'name' | 'year') => {
+  const handleSort = (field: 'percentage' | 'swing' | 'name' | 'year' | 'votes' | 'totalVotes') => {
     if (sortField === field) {
       setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
     } else {
@@ -420,26 +443,35 @@ export default function Leaderboard() {
           <table className="w-full text-left text-sm">
             <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold text-xs uppercase tracking-wider">
               <tr>
-                <th className="px-5 py-3.5 w-16">Rank</th>
-                <th className="px-5 py-3.5 cursor-pointer hover:bg-slate-100/60" onClick={() => handleSort('name')}>
+                <th className="px-5 py-3.5 w-14">Rank</th>
+                <th className="px-5 py-3.5">Booth / Election</th>
+                <th
+                  className="px-5 py-3.5 cursor-pointer hover:bg-slate-100/60 text-greens-700"
+                  onClick={() => handleSort('percentage')}
+                >
                   <div className="flex items-center gap-1">
-                    <span>Booth</span>
-                    <ArrowUpDown className="w-3.5 h-3.5 text-slate-450" />
+                    <span>Greens %</span>
+                    <ArrowUpDown className="w-3.5 h-3.5 text-slate-400" />
                   </div>
                 </th>
-                <th className="px-5 py-3.5 cursor-pointer hover:bg-slate-100/60" onClick={() => handleSort('year')}>
+                <th
+                  className="px-5 py-3.5 cursor-pointer hover:bg-slate-100/60 text-greens-700"
+                  onClick={() => handleSort('votes')}
+                >
                   <div className="flex items-center gap-1">
-                    <span>Election</span>
-                    <ArrowUpDown className="w-3.5 h-3.5 text-slate-450" />
+                    <span>Greens Votes</span>
+                    <ArrowUpDown className="w-3.5 h-3.5 text-slate-400" />
                   </div>
                 </th>
-                <th className="px-5 py-3.5 cursor-pointer hover:bg-slate-100/60" onClick={() => handleSort('percentage')}>
-                  <div className="flex items-center gap-1">
-                    <span>Greens</span>
-                    <ArrowUpDown className="w-3.5 h-3.5 text-slate-450" />
+                <th
+                  className="px-5 py-3.5 cursor-pointer hover:bg-slate-100/60 text-right"
+                  onClick={() => handleSort('totalVotes')}
+                >
+                  <div className="flex items-center justify-end gap-1">
+                    <span>Total Votes</span>
+                    <ArrowUpDown className="w-3.5 h-3.5 text-slate-400" />
                   </div>
                 </th>
-
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-150 text-slate-700">
@@ -451,7 +483,7 @@ export default function Leaderboard() {
 
 
                   return (
-                    <tr key={`${row.boothId}-${row.electionId}-${row.contestName}`} className="hover:bg-slate-50/50">
+                    <tr key={`${row.boothId}-${row.electionId}-${row.contestName}-${row.division}`} className="hover:bg-slate-50/50">
                       <td className="px-5 py-4">
                         <span
                           className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-mono font-bold ${isTop3
@@ -463,15 +495,27 @@ export default function Leaderboard() {
                         </span>
                       </td>
                       <td className="px-5 py-4">
-                        <div className="flex flex-wrap items-center gap-2">
+                        <div className="flex flex-wrap items-center gap-2 mb-0.5">
                           <Link
                             to={`/booth/${row.boothId}`}
-                            className="font-bold text-slate-900 hover:text-greens-600 transition-colors"
+                            className="font-bold text-slate-900 hover:text-greens-600 transition-colors text-sm"
                           >
                             {row.boothName}
                           </Link>
+                          <span className="text-slate-400 font-mono">-</span>
+                          <Link 
+                            to={`/election/${row.electionId}`} 
+                            className="font-bold text-slate-900 hover:text-greens-600 transition-colors text-sm"
+                          >
+                            {row.electionName}
+                            {multiContestKeys.has(`${row.boothId}||${row.electionId}`) && (
+                              <span className="text-slate-500 font-normal">
+                                {` — ${row.contestName} (${row.division})`}
+                              </span>
+                            )}
+                          </Link>
                           {row.boothType && row.boothType !== 'ordinary' && (
-                            <span className={`border text-[9px] px-1 py-0.2 rounded font-bold font-mono uppercase tracking-wider ${row.boothType === "pre-poll" ? "bg-amber-50 text-amber-700 border-amber-200" :
+                            <span className={`border text-[9px] px-1 py-0.5 rounded font-bold font-mono uppercase tracking-wider ${row.boothType === "pre-poll" ? "bg-amber-50 text-amber-700 border-amber-200" :
                               row.boothType === "postal" ? "bg-blue-50 text-blue-700 border-blue-200" :
                                 row.boothType === "absent" ? "bg-purple-50 text-purple-700 border-purple-200" :
                                   "bg-rose-50 text-rose-700 border-rose-200"
@@ -482,23 +526,16 @@ export default function Leaderboard() {
                             </span>
                           )}
                         </div>
-                        <div className="text-xs text-slate-500 mt-0.5">{row.suburb}</div>
-                      </td>
-                      <td className="px-5 py-4 text-xs">
-                        <div className="text-slate-800 font-semibold">
-                          <Link to={`/election/${row.electionId}`} className="hover:text-greens-600 transition-colors">
-                            {row.electionName}
-                          </Link>
-                        </div>
-                        <div className="text-[10px] text-slate-550 mt-0.5 uppercase tracking-wider font-mono">
-                          {row.division}
-                        </div>
                       </td>
                       <td className="px-5 py-4 font-mono font-bold text-greens-600 text-base">
                         {row.greensPercentage}%
-                        <div className="text-[10px] text-slate-550 font-normal mt-0.5">{row.greensVotes} votes</div>
                       </td>
-
+                      <td className="px-5 py-4 font-mono font-semibold text-greens-700">
+                        {row.greensVotes.toLocaleString()}
+                      </td>
+                      <td className="px-5 py-4 text-right font-mono text-slate-500 text-xs">
+                        {row.totalVotes.toLocaleString()}
+                      </td>
                     </tr>
                   );
                 })

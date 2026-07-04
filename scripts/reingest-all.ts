@@ -5,8 +5,6 @@ import type { PollingPlace, ContestResult } from '../src/types';
 const boothsPath = path.resolve(import.meta.dirname || '.', '../src/data/booths.json');
 let booths: PollingPlace[] = JSON.parse(fs.readFileSync(boothsPath, 'utf-8'));
 
-// 1. Reset booths: Keep only original 84 booths, and clear results for the target elections
-booths = booths.filter(b => parseInt(b.id) <= 84);
 booths.forEach(b => {
   b.results = b.results.filter(r => 
     r.electionId !== '2026-by-election-newcastle' &&
@@ -15,79 +13,15 @@ booths.forEach(b => {
     r.electionId !== '2015-state' &&
     r.electionId !== '2014-by-election-charlestown' &&
     r.electionId !== '2014-by-election-newcastle' &&
-    r.electionId !== '2024-lake-macquarie-local'
+    r.electionId !== '2024-lake-macquarie-local' &&
+    r.electionId !== '2024-local-newcastle' &&
+    r.electionId !== '2025-federal'
   );
 });
 
-// Manual Mapping overrides to avoid matching high schools to public schools or mis-matching names
-const manualMappings: Record<string, string> = {
-  "Cardiff Sth Public": "57",
-  "Cardiff Public": "53",
-  "Cardiff Hghts Baptist": "20",
-  "Charlestown E Public": "54",
-  "Charlestown Sth Public": "4",
-  "Dudley Pensioners Hall": "51",
-  "Eleebana Public": "75",
-  "Floraville Public": "74",
-  "Garden Suburb Public": "56",
-  "Hillsborough Public": "61",
-  "Kahibah Public": "55",
-  "Kotara Sth Public": "28",
-  "Merewether Uniting": "23",
-  "Mt Hutton Public": "58",
-  "New Lambton Sth Public": "42",
-  "The Junction Public": "46",
-  "Warners Bay Public": "64",
-  "Whitebridge High": "52",
-  "Windale Public": "65",
-  "Windale Comm. Cntr": "65",
-  "Beresfield Public": "78",
-  "Callaghan Cllg - Jesmond Snr": "79",
-  "Callaghan Cllg - Waratah Tech": "80",
-  "Carrington Public": "39",
-  "Elermore Vale Public": "43",
-  "Fletcher Comm. Cntr": "30",
-  "Hamilton Nth Public": "19",
-  "Hamilton Public": "77",
-  "Hamilton Sth Comm. Hall": "2",
-  "Islington Public": "29",
-  "Maryland Public": "41",
-  "Mayfield Church of Christ": "18",
-  "Shortland Public": "31",
-  "St Columba's Adamstown": "82",
-  "St Thereses New Lambton": "83",
-  "Stockton Public": "37",
-  "Wallsend Sth Public": "45",
-  "Tarro Hall": "84",
-  "Glendore Public": "33",
-  "Plattsburg Public": "35",
-  "Minmi Hall": "14",
-  "Jesmond Nhood Cntr": "34",
-  "Tighes Hill Public": "15",
-  "Newcastle TAFE": "15",
-  "Valentine Public": "76"
-};
-
-// Helper to normalize names for strict matching (only replacing standard abbreviations and removing non-alphanumeric chars)
-const normalizeName = (name: string): string => {
-  return name.toLowerCase()
-    .replace(/\bsth\b/g, "south")
-    .replace(/\bnth\b/g, "north")
-    .replace(/\beast\b/g, "east")
-    .replace(/\bwest\b/g, "west")
-    .replace(/[^a-z0-9]/g, "");
-};
-
-// Strict matching algorithm (Exact-Only match after normalization)
+// Strict matching algorithm (Exact-Only match)
 const strictMatch = (rawName: string): PollingPlace | undefined => {
-  // Check manual mappings first
-  if (manualMappings[rawName]) {
-    const mapped = booths.find(b => b.id === manualMappings[rawName]);
-    if (mapped) return mapped;
-  }
-
-  const normRaw = normalizeName(rawName);
-  return booths.find(b => normalizeName(b.name) === normRaw);
+  return booths.find(b => b.name === rawName);
 };
 
 // Add result logic
@@ -114,7 +48,7 @@ const addResult = (
   }
 
   if (!booth) {
-    const maxId = Math.max(...booths.map(b => parseInt(b.id) || 0));
+    const maxId = booths.length > 0 ? Math.max(...booths.map(b => parseInt(b.id) || 0)) : 0;
     // Determine suburb from rawName
     const suburb = rawName
       .replace(/ Public| High| TAFE| Snr Ctzn Cntr| Comm Cntr| Comm. Cntr| Hall| Uniting| Anglican| Baptist| Church of Christ| Presbyterian| Pensioners| Ordinary| East| North| South| West| City| Scout| Neighborhood| Nhood/g, "")
@@ -1048,5 +982,86 @@ addResult("Declared Institution (North Ward)", "other-dec", "North Ward", lgaLak
 addResult("Provisional (North Ward)", "other-dec", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 316, 441, 226, 330 + 4 + 2 + 4, 1323);
 addResult("Postal (North Ward)", "postal", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 306, 1346, 978, 909 + 12 + 4 + 13, 3568);
 
-fs.writeFileSync(boothsPath, JSON.stringify(booths, null, 2), 'utf-8');
-console.log("Successfully completed strict re-ingestion.");
+
+// 15. 2024 NEWCASTLE MAYORAL ELECTION
+const raw2024NewcastleMayor = `Adamstown Snr Ctzn Cntr	54	46	344	204	491	310	1449
+All Saints New Lambton	20	40	520	101	318	159	1158
+Beresfield Public	58	89	388	360	745	133	1773
+Callaghan Cllg - Jesmond Snr	63	61	325	135	493	312	1389
+Callaghan Cllg - Wallsend	47	57	375	221	559	188	1447
+Cardiff Hghts Baptist	6	12	66	22	50	39	195
+Carrington Public	38	24	500	131	453	342	1488
+Elermore Vale Public	49	62	459	252	572	202	1596
+Fletcher Comm. Cntr	19	25	276	213	400	130	1063
+Glendore Public	26	47	371	232	502	121	1299
+Goodlife Church Wickham	28	10	219	83	206	186	732
+Hamilton Nth Public	11	19	194	55	205	101	585
+Hamilton Public	84	50	701	175	504	488	2002
+Hamilton Sth Comm. Hall	33	15	129	43	159	91	470
+Hamilton Sth Public	26	26	803	196	393	249	1693
+HMC Waratah	16	19	109	36	115	104	399
+Islington Public	52	36	364	123	417	560	1552
+Jesmond Nhood Cntr	18	22	170	52	207	121	590
+Kotara High	22	30	472	188	415	219	1346
+Kotara Sth Public	25	33	366	153	367	161	1105
+Lambton High	39	57	600	123	363	168	1350
+Lambton Public	36	40	493	116	357	157	1199
+Maryland Public	45	57	417	227	548	127	1421
+Mayfield Church of Christ	38	31	266	92	377	224	1028
+Mayfield E Public	50	31	357	108	425	389	1360
+Merewether Hghts Public	9	14	428	190	357	150	1148
+Merewether Uniting	21	21	325	130	226	145	868
+Minmi Hall	14	29	148	129	199	39	558
+New Lambton Sth Public	34	49	507	151	622	280	1643
+Newcastle E Public	50	24	556	154	351	302	1437
+Newcastle School	46	22	335	112	262	205	982
+Newcastle TAFE	13	9	99	33	126	179	459
+Our Lady of Victories Shortland	36	45	259	107	309	133	889
+Shortland Public	37	67	278	187	486	204	1259
+St Andrews Mayfield	88	56	564	165	645	452	1970
+St Augustine's Anglican	7	20	435	151	262	119	994
+St Columba's Adamstown	43	36	428	209	392	216	1324
+St Johns Cooks Hill	39	27	638	182	394	378	1658
+St Patricks Wallsend	18	24	144	79	243	90	598
+St Thereses New Lambton	37	44	576	169	560	229	1615
+Stockton Public	35	31	558	229	561	185	1599
+Tarro Hall	10	17	132	83	195	33	470
+The Junction Public	44	38	768	260	602	366	2078
+Wallsend Public	45	68	428	221	582	244	1588
+Wallsend Sth Public	22	41	474	131	400	175	1243
+Warabrook Comm. Cntr	20	35	232	107	323	114	831
+Waratah Public	57	56	480	156	618	361	1728
+Waratah W Public	21	24	271	67	292	119	794`;
+
+raw2024NewcastleMayor.split('\n').forEach(line => {
+  const parts = line.split('\t');
+  const name = parts[0].trim();
+  const obrien = parseNumber(parts[1]);
+  const caine = parseNumber(parts[2]);
+  const kerridge = parseNumber(parts[3]);
+  const lib = parseNumber(parts[4]);
+  const alp = parseNumber(parts[5]);
+  const grn = parseNumber(parts[6]);
+  const total = parseNumber(parts[7]);
+
+  addResult(name, "ordinary", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", grn, alp, lib, obrien + caine + kerridge, total);
+});
+
+// Specials for Newcastle 2024 Mayor
+addResult("Adamstown Pre-Poll", "pre-poll", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 708, 1476, 688, 110 + 112 + 2265, 5359);
+addResult("Fletcher Pre-Poll", "pre-poll", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 168, 942, 524, 41 + 87 + 761, 2523);
+addResult("Mayfield Pre-Poll", "pre-poll", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 731, 1517, 607, 140 + 110 + 1635, 4740);
+addResult("Merewether Pre-Poll", "pre-poll", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 232, 609, 321, 30 + 41 + 1244, 2477);
+addResult("New Lambton Pre-Poll", "pre-poll", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 519, 1374, 453, 94 + 153 + 2399, 4992);
+addResult("Newcastle Pre-Poll", "pre-poll", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 721, 1166, 432, 124 + 47 + 2052, 4542);
+addResult("Wallsend Pre-Poll", "pre-poll", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 656, 3069, 1262, 164 + 259 + 2760, 8170);
+addResult("Declared Institution (Newcastle)", "other-dec", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 17, 154, 70, 21 + 17 + 84, 363);
+addResult("Provisional (Newcastle)", "other-dec", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 1140, 1315, 601, 167 + 160 + 777, 4160);
+addResult("Postal (Newcastle)", "postal", "Newcastle", lgaNewcastle, "2024-local-newcastle", "Mayor", 765, 2489, 1166, 122 + 243 + 3026, 7811);
+
+
+// Cleanup any empty booths
+const finalBooths = booths.filter(b => b.results.length > 0);
+
+fs.writeFileSync(boothsPath, JSON.stringify(finalBooths, null, 2), 'utf-8');
+console.log(`Successfully completed strict re-ingestion. Final booth count: ${finalBooths.length}`);

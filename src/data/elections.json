@@ -7,25 +7,11 @@
     "division": "Newcastle, Shortland"
   },
   {
-    "id": "2022-federal",
-    "name": "2022 Federal Election",
-    "date": "2022-05-21",
-    "type": "federal",
-    "division": "Newcastle, Shortland"
-  },
-  {
     "id": "2024-lake-macquarie-local",
     "name": "2024 Lake Macquarie Local Election",
     "date": "2024-09-14",
     "type": "local",
     "division": "Lake Macquarie"
-  },
-  {
-    "id": "2013-federal",
-    "name": "2013 Federal Election",
-    "date": "2013-09-07",
-    "type": "federal",
-    "division": "Newcastle, Shortland"
   },
   {
     "id": "2015-state",
@@ -35,13 +21,6 @@
     "division": "Charlestown, Newcastle, Wallsend"
   },
   {
-    "id": "2016-federal",
-    "name": "2016 Federal Election",
-    "date": "2016-07-02",
-    "type": "federal",
-    "division": "Newcastle, Shortland"
-  },
-  {
     "id": "2019-state",
     "name": "2019 State Election",
     "date": "2019-03-23",
@@ -49,39 +28,11 @@
     "division": "Charlestown, Newcastle, Wallsend"
   },
   {
-    "id": "2019-federal",
-    "name": "2019 Federal Election",
-    "date": "2019-05-18",
-    "type": "federal",
-    "division": "Newcastle, Shortland"
-  },
-  {
-    "id": "2021-lake-macquarie-local",
-    "name": "2021 Lake Macquarie Local Election",
-    "date": "2021-12-04",
-    "type": "local",
-    "division": "Lake Macquarie"
-  },
-  {
     "id": "2023-state",
     "name": "2023 State Election",
     "date": "2023-03-25",
     "type": "state",
     "division": "Charlestown, Newcastle, Wallsend"
-  },
-  {
-    "id": "2017-local-newcastle",
-    "name": "2017 Newcastle Local Election",
-    "date": "2017-09-09",
-    "type": "local",
-    "division": "Newcastle"
-  },
-  {
-    "id": "2021-local-newcastle",
-    "name": "2021 Newcastle Local Election",
-    "date": "2021-12-04",
-    "type": "local",
-    "division": "Newcastle"
   },
   {
     "id": "2024-local-newcastle",
@@ -112,6 +63,13 @@
     "date": "2014-10-25",
     "type": "by-election",
     "parentType": "state",
+    "division": "Newcastle"
+  },
+  {
+    "id": "2021-local-newcastle",
+    "name": "2021 Newcastle Local Election",
+    "date": "2021-12-04",
+    "type": "local",
     "division": "Newcastle"
   }
 ]

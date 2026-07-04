@@ -1,4 +1,5 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Home as HomeIcon, Trophy, Vote, BarChart3 } from 'lucide-react';
 import Home from './pages/Home';
 import BoothDetail from './pages/BoothDetail';
@@ -7,9 +8,20 @@ import ElectionLeaderboard from './pages/ElectionLeaderboard';
 import Completeness from './pages/Completeness';
 import ElectionDetail from './pages/ElectionDetail';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
         {/* Navigation Header */}
         <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-250/70 px-4 py-3 shadow-sm">

@@ -84,6 +84,23 @@ console.log(`Parsed ${parsedRows.length} rows of new 2025 election data.`);
 let matchedCount = 0;
 let createdCount = 0;
 
+function determineBoothType(name: string): "ordinary" | "pre-poll" | "postal" | "absent" | "other-dec" {
+  const lower = name.toLowerCase();
+  if (lower.includes('pre-poll') || lower.includes('evc') || lower.includes('ppvc')) {
+    return 'pre-poll';
+  }
+  if (lower.includes('postal')) {
+    return 'postal';
+  }
+  if (lower.includes('absent')) {
+    return 'absent';
+  }
+  if (lower.includes('declared institution') || lower.includes('provisional') || lower.includes('other-dec') || lower.includes('facility') || lower.includes('hospital team')) {
+    return 'other-dec';
+  }
+  return 'ordinary';
+}
+
 parsedRows.forEach(row => {
   const rawName = row['Booth'];
   const totalFormal = parseInt(row['Total Formal']);
@@ -97,16 +114,15 @@ parsedRows.forEach(row => {
   const libPercentage = parseFloat(((libVotes / totalFormal) * 100).toFixed(2));
   const alpPercentage = parseFloat(((alpVotes / totalFormal) * 100).toFixed(2));
 
-  // Try to find the booth in the existing booths-mock.json
-  // We can do a smart name match
-  let booth = booths.find(b => b.name.toLowerCase() === rawName.toLowerCase());
+  const boothType = determineBoothType(rawName);
 
-  // If not found, try a looser match (e.g. "Newcastle City Hall" matches "Newcastle City")
-  if (!booth) {
-    booth = booths.find(b =>
-      b.name.toLowerCase().includes(rawName.toLowerCase()) ||
-      rawName.toLowerCase().includes(b.name.toLowerCase())
-    );
+  // Try to find the booth in the existing booths
+  // Using exact match to match user design (grouped in booth-groups.json later)
+  let booth: PollingPlace | undefined;
+  if (boothType === 'ordinary') {
+    booth = booths.find(b => b.name === rawName && (!b.type || b.type === 'ordinary'));
+  } else {
+    booth = booths.find(b => b.name === rawName && b.type === boothType);
   }
 
   const newResults: ContestResult[] = [
@@ -116,6 +132,7 @@ parsedRows.forEach(row => {
       party: "GRN",
       votes: grnVotes,
       percentage: grnPercentage,
+      division: "Newcastle",
     },
     {
       electionId: "2025-federal",
@@ -123,6 +140,7 @@ parsedRows.forEach(row => {
       party: "LNP", // standardizing LIB to LNP
       votes: libVotes,
       percentage: libPercentage,
+      division: "Newcastle",
     },
     {
       electionId: "2025-federal",
@@ -130,6 +148,7 @@ parsedRows.forEach(row => {
       party: "ALP",
       votes: alpVotes,
       percentage: alpPercentage,
+      division: "Newcastle",
     }
   ];
 
@@ -141,7 +160,8 @@ parsedRows.forEach(row => {
     matchedCount++;
   } else {
     // Create new booth entry
-    const newBoothId = String(booths.length + 1);
+    const maxId = booths.length > 0 ? Math.max(...booths.map(b => parseInt(b.id) || 0)) : 0;
+    const newBoothId = String(maxId + 1);
     // Extract suburb from booth name if possible, or use a default
     let suburb = rawName;
     if (rawName.includes('NEWCASTLE')) suburb = 'Newcastle';
@@ -155,6 +175,7 @@ parsedRows.forEach(row => {
       lga: rawName.toLowerCase().includes('lake') ? "Lake Macquarie City Council" : "City of Newcastle",
       lat: -32.9272, // Newcastle Center default
       lng: 151.7761,
+      type: boothType === 'ordinary' ? undefined : boothType,
       results: newResults
     });
     createdCount++;
@@ -164,6 +185,5 @@ parsedRows.forEach(row => {
 console.log(`Matched and updated: ${matchedCount} booths.`);
 console.log(`Created new: ${createdCount} booths.`);
 
-// Write back to booths-mock.json
 fs.writeFileSync(boothsPath, JSON.stringify(booths, null, 2), 'utf-8');
-console.log('Successfully wrote to booths-mock.json.');
+console.log('Successfully wrote to booths.json.');

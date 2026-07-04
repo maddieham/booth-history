@@ -1,0 +1,1836 @@
+[
+  {
+    "slug": "adamstown-snr-ctzn-cntr",
+    "displayName": "Adamstown Snr Ctzn Cntr",
+    "rawNames": [
+      "Adamstown Snr Ctzn Cntr"
+    ]
+  },
+  {
+    "slug": "beresfield-public",
+    "displayName": "Beresfield Public",
+    "rawNames": [
+      "Beresfield Public"
+    ]
+  },
+  {
+    "slug": "callaghan-cllg-jesmond-snr",
+    "displayName": "Callaghan Cllg - Jesmond Snr",
+    "rawNames": [
+      "Callaghan Cllg - Jesmond Snr"
+    ]
+  },
+  {
+    "slug": "callaghan-cllg-wallsend",
+    "displayName": "Callaghan Cllg - Wallsend",
+    "rawNames": [
+      "Callaghan Cllg - Wallsend"
+    ]
+  },
+  {
+    "slug": "callaghan-cllg-waratah-tech",
+    "displayName": "Callaghan Cllg - Waratah Tech",
+    "rawNames": [
+      "Callaghan Cllg - Waratah Tech"
+    ]
+  },
+  {
+    "slug": "carrington-public",
+    "displayName": "Carrington Public",
+    "rawNames": [
+      "Carrington Public"
+    ]
+  },
+  {
+    "slug": "elermore-vale-public",
+    "displayName": "Elermore Vale Public",
+    "rawNames": [
+      "Elermore Vale Public"
+    ]
+  },
+  {
+    "slug": "fletcher-comm-cntr",
+    "displayName": "Fletcher Comm. Cntr",
+    "rawNames": [
+      "Fletcher Comm. Cntr"
+    ]
+  },
+  {
+    "slug": "glendore-public",
+    "displayName": "Glendore Public",
+    "rawNames": [
+      "Glendore Public"
+    ]
+  },
+  {
+    "slug": "hamilton-nth-public",
+    "displayName": "Hamilton Nth Public",
+    "rawNames": [
+      "Hamilton Nth Public"
+    ]
+  },
+  {
+    "slug": "hamilton-public",
+    "displayName": "Hamilton Public",
+    "rawNames": [
+      "Hamilton Public"
+    ]
+  },
+  {
+    "slug": "hamilton-sth-comm-hall",
+    "displayName": "Hamilton Sth Comm. Hall",
+    "rawNames": [
+      "Hamilton Sth Comm. Hall"
+    ]
+  },
+  {
+    "slug": "hamilton-sth-public",
+    "displayName": "Hamilton Sth Public",
+    "rawNames": [
+      "Hamilton Sth Public"
+    ]
+  },
+  {
+    "slug": "icc-newcastle",
+    "displayName": "ICC Newcastle",
+    "rawNames": [
+      "ICC Newcastle"
+    ]
+  },
+  {
+    "slug": "islington-public",
+    "displayName": "Islington Public",
+    "rawNames": [
+      "Islington Public"
+    ]
+  },
+  {
+    "slug": "jesmond-nhood-cntr",
+    "displayName": "Jesmond Nhood Cntr",
+    "rawNames": [
+      "Jesmond Nhood Cntr"
+    ]
+  },
+  {
+    "slug": "kotara-high",
+    "displayName": "Kotara High",
+    "rawNames": [
+      "Kotara High"
+    ]
+  },
+  {
+    "slug": "kotara-sth-public",
+    "displayName": "Kotara Sth Public",
+    "rawNames": [
+      "Kotara Sth Public"
+    ]
+  },
+  {
+    "slug": "lambton-high",
+    "displayName": "Lambton High",
+    "rawNames": [
+      "Lambton High"
+    ]
+  },
+  {
+    "slug": "lambton-public",
+    "displayName": "Lambton Public",
+    "rawNames": [
+      "Lambton Public"
+    ]
+  },
+  {
+    "slug": "maryland-public",
+    "displayName": "Maryland Public",
+    "rawNames": [
+      "Maryland Public"
+    ]
+  },
+  {
+    "slug": "mayfield-baptist",
+    "displayName": "Mayfield Baptist",
+    "rawNames": [
+      "Mayfield Baptist"
+    ]
+  },
+  {
+    "slug": "mayfield-church-of-christ",
+    "displayName": "Mayfield Church of Christ",
+    "rawNames": [
+      "Mayfield Church of Christ"
+    ]
+  },
+  {
+    "slug": "mayfield-e-public",
+    "displayName": "Mayfield E Public",
+    "rawNames": [
+      "Mayfield E Public"
+    ]
+  },
+  {
+    "slug": "mayfield-presbyterian",
+    "displayName": "Mayfield Presbyterian",
+    "rawNames": [
+      "Mayfield Presbyterian"
+    ]
+  },
+  {
+    "slug": "merewether-hghts-public",
+    "displayName": "Merewether Hghts Public",
+    "rawNames": [
+      "Merewether Hghts Public"
+    ]
+  },
+  {
+    "slug": "merewether-uniting",
+    "displayName": "Merewether Uniting",
+    "rawNames": [
+      "Merewether Uniting"
+    ]
+  },
+  {
+    "slug": "minmi-hall",
+    "displayName": "Minmi Hall",
+    "rawNames": [
+      "Minmi Hall"
+    ]
+  },
+  {
+    "slug": "new-lambton-comm-cntr",
+    "displayName": "New Lambton Comm Cntr",
+    "rawNames": [
+      "New Lambton Comm Cntr"
+    ]
+  },
+  {
+    "slug": "new-lambton-sth-public",
+    "displayName": "New Lambton Sth Public",
+    "rawNames": [
+      "New Lambton Sth Public"
+    ]
+  },
+  {
+    "slug": "newcastle-city-hall",
+    "displayName": "Newcastle City Hall",
+    "rawNames": [
+      "Newcastle City Hall"
+    ]
+  },
+  {
+    "slug": "newcastle-city-scout-hall",
+    "displayName": "Newcastle City Scout Hall",
+    "rawNames": [
+      "Newcastle City Scout Hall"
+    ]
+  },
+  {
+    "slug": "newcastle-e-public",
+    "displayName": "Newcastle E Public",
+    "rawNames": [
+      "Newcastle E Public"
+    ]
+  },
+  {
+    "slug": "newcastle-tafe",
+    "displayName": "Newcastle TAFE",
+    "rawNames": [
+      "Newcastle TAFE"
+    ]
+  },
+  {
+    "slug": "our-lady-of-victories-shortland",
+    "displayName": "Our Lady of Victories Shortland",
+    "rawNames": [
+      "Our Lady of Victories Shortland"
+    ]
+  },
+  {
+    "slug": "shortland-public",
+    "displayName": "Shortland Public",
+    "rawNames": [
+      "Shortland Public"
+    ]
+  },
+  {
+    "slug": "st-augustine-s-anglican",
+    "displayName": "St Augustine's Anglican",
+    "rawNames": [
+      "St Augustine's Anglican"
+    ]
+  },
+  {
+    "slug": "st-columba-s-adamstown",
+    "displayName": "St Columba's Adamstown",
+    "rawNames": [
+      "St Columba's Adamstown"
+    ]
+  },
+  {
+    "slug": "st-johns-cooks-hill",
+    "displayName": "St Johns Cooks Hill",
+    "rawNames": [
+      "St Johns Cooks Hill"
+    ]
+  },
+  {
+    "slug": "st-lukes-wallsend",
+    "displayName": "St Lukes Wallsend",
+    "rawNames": [
+      "St Lukes Wallsend"
+    ]
+  },
+  {
+    "slug": "st-patricks-wallsend",
+    "displayName": "St Patricks Wallsend",
+    "rawNames": [
+      "St Patricks Wallsend"
+    ]
+  },
+  {
+    "slug": "st-thereses-new-lambton",
+    "displayName": "St Thereses New Lambton",
+    "rawNames": [
+      "St Thereses New Lambton"
+    ]
+  },
+  {
+    "slug": "stockton-public",
+    "displayName": "Stockton Public",
+    "rawNames": [
+      "Stockton Public"
+    ]
+  },
+  {
+    "slug": "tarro-hall",
+    "displayName": "Tarro Hall",
+    "rawNames": [
+      "Tarro Hall"
+    ]
+  },
+  {
+    "slug": "the-junction-public",
+    "displayName": "The Junction Public",
+    "rawNames": [
+      "The Junction Public"
+    ]
+  },
+  {
+    "slug": "wallsend-sth-public",
+    "displayName": "Wallsend Sth Public",
+    "rawNames": [
+      "Wallsend Sth Public"
+    ]
+  },
+  {
+    "slug": "warabrook-comm-cntr",
+    "displayName": "Warabrook Comm. Cntr",
+    "rawNames": [
+      "Warabrook Comm. Cntr"
+    ]
+  },
+  {
+    "slug": "waratah-public",
+    "displayName": "Waratah Public",
+    "rawNames": [
+      "Waratah Public"
+    ]
+  },
+  {
+    "slug": "adamstown-pre-poll",
+    "displayName": "Adamstown Pre-Poll",
+    "rawNames": [
+      "Adamstown Pre-Poll"
+    ]
+  },
+  {
+    "slug": "fletcher-pre-poll",
+    "displayName": "Fletcher Pre-Poll",
+    "rawNames": [
+      "Fletcher Pre-Poll"
+    ]
+  },
+  {
+    "slug": "mayfield-pre-poll",
+    "displayName": "Mayfield Pre-Poll",
+    "rawNames": [
+      "Mayfield Pre-Poll"
+    ]
+  },
+  {
+    "slug": "new-lambton-pre-poll",
+    "displayName": "New Lambton Pre-Poll",
+    "rawNames": [
+      "New Lambton Pre-Poll"
+    ]
+  },
+  {
+    "slug": "newcastle-pre-poll",
+    "displayName": "Newcastle Pre-Poll",
+    "rawNames": [
+      "Newcastle Pre-Poll"
+    ]
+  },
+  {
+    "slug": "wallsend-pre-poll",
+    "displayName": "Wallsend Pre-Poll",
+    "rawNames": [
+      "Wallsend Pre-Poll"
+    ]
+  },
+  {
+    "slug": "declared-institution-newcastle",
+    "displayName": "Declared Institution (Newcastle)",
+    "rawNames": [
+      "Declared Institution (Newcastle)"
+    ]
+  },
+  {
+    "slug": "provisional-newcastle",
+    "displayName": "Provisional (Newcastle)",
+    "rawNames": [
+      "Provisional (Newcastle)"
+    ]
+  },
+  {
+    "slug": "postal-newcastle",
+    "displayName": "Postal (Newcastle)",
+    "rawNames": [
+      "Postal (Newcastle)"
+    ]
+  },
+  {
+    "slug": "all-saints-new-lambton",
+    "displayName": "All Saints New Lambton",
+    "rawNames": [
+      "All Saints New Lambton"
+    ]
+  },
+  {
+    "slug": "cardiff-hghts-baptist",
+    "displayName": "Cardiff Hghts Baptist",
+    "rawNames": [
+      "Cardiff Hghts Baptist"
+    ]
+  },
+  {
+    "slug": "cardiff-public",
+    "displayName": "Cardiff Public",
+    "rawNames": [
+      "Cardiff Public"
+    ]
+  },
+  {
+    "slug": "cardiff-sth-public",
+    "displayName": "Cardiff Sth Public",
+    "rawNames": [
+      "Cardiff Sth Public"
+    ]
+  },
+  {
+    "slug": "charlestown-e-public",
+    "displayName": "Charlestown E Public",
+    "rawNames": [
+      "Charlestown E Public"
+    ]
+  },
+  {
+    "slug": "charlestown-public",
+    "displayName": "Charlestown Public",
+    "rawNames": [
+      "Charlestown Public"
+    ]
+  },
+  {
+    "slug": "charlestown-sth-public",
+    "displayName": "Charlestown Sth Public",
+    "rawNames": [
+      "Charlestown Sth Public"
+    ]
+  },
+  {
+    "slug": "dudley-pensioners-hall",
+    "displayName": "Dudley Pensioners Hall",
+    "rawNames": [
+      "Dudley Pensioners Hall"
+    ]
+  },
+  {
+    "slug": "eleebana-public",
+    "displayName": "Eleebana Public",
+    "rawNames": [
+      "Eleebana Public"
+    ]
+  },
+  {
+    "slug": "floraville-public",
+    "displayName": "Floraville Public",
+    "rawNames": [
+      "Floraville Public"
+    ]
+  },
+  {
+    "slug": "garden-suburb-public",
+    "displayName": "Garden Suburb Public",
+    "rawNames": [
+      "Garden Suburb Public"
+    ]
+  },
+  {
+    "slug": "hillsborough-public",
+    "displayName": "Hillsborough Public",
+    "rawNames": [
+      "Hillsborough Public"
+    ]
+  },
+  {
+    "slug": "hunter-sports-high",
+    "displayName": "Hunter Sports High",
+    "rawNames": [
+      "Hunter Sports High"
+    ]
+  },
+  {
+    "slug": "kahibah-public",
+    "displayName": "Kahibah Public",
+    "rawNames": [
+      "Kahibah Public"
+    ]
+  },
+  {
+    "slug": "lakelands-hall",
+    "displayName": "Lakelands Hall",
+    "rawNames": [
+      "Lakelands Hall"
+    ]
+  },
+  {
+    "slug": "mt-hutton-public",
+    "displayName": "Mt Hutton Public",
+    "rawNames": [
+      "Mt Hutton Public"
+    ]
+  },
+  {
+    "slug": "warners-bay-high",
+    "displayName": "Warners Bay High",
+    "rawNames": [
+      "Warners Bay High"
+    ]
+  },
+  {
+    "slug": "warners-bay-public",
+    "displayName": "Warners Bay Public",
+    "rawNames": [
+      "Warners Bay Public"
+    ]
+  },
+  {
+    "slug": "whitebridge-high",
+    "displayName": "Whitebridge High",
+    "rawNames": [
+      "Whitebridge High"
+    ]
+  },
+  {
+    "slug": "windale-public",
+    "displayName": "Windale Public",
+    "rawNames": [
+      "Windale Public"
+    ]
+  },
+  {
+    "slug": "adamstown-evc",
+    "displayName": "Adamstown EVC",
+    "rawNames": [
+      "Adamstown EVC"
+    ]
+  },
+  {
+    "slug": "charlestown-em-office",
+    "displayName": "Charlestown EM Office",
+    "rawNames": [
+      "Charlestown EM Office"
+    ]
+  },
+  {
+    "slug": "newcastle-evc",
+    "displayName": "Newcastle EVC",
+    "rawNames": [
+      "Newcastle EVC"
+    ]
+  },
+  {
+    "slug": "speers-point-evc",
+    "displayName": "Speers Point EVC",
+    "rawNames": [
+      "Speers Point EVC"
+    ]
+  },
+  {
+    "slug": "tav",
+    "displayName": "TAV",
+    "rawNames": [
+      "TAV"
+    ]
+  },
+  {
+    "slug": "absent-charlestown",
+    "displayName": "Absent (Charlestown)",
+    "rawNames": [
+      "Absent (Charlestown)"
+    ]
+  },
+  {
+    "slug": "provisional-charlestown",
+    "displayName": "Provisional (Charlestown)",
+    "rawNames": [
+      "Provisional (Charlestown)"
+    ]
+  },
+  {
+    "slug": "postal-charlestown",
+    "displayName": "Postal (Charlestown)",
+    "rawNames": [
+      "Postal (Charlestown)"
+    ]
+  },
+  {
+    "slug": "cardiff-nth-public",
+    "displayName": "Cardiff Nth Public",
+    "rawNames": [
+      "Cardiff Nth Public"
+    ]
+  },
+  {
+    "slug": "edgeworth-public",
+    "displayName": "Edgeworth Public",
+    "rawNames": [
+      "Edgeworth Public"
+    ]
+  },
+  {
+    "slug": "glendale-e-public",
+    "displayName": "Glendale E Public",
+    "rawNames": [
+      "Glendale E Public"
+    ]
+  },
+  {
+    "slug": "wallsend-public",
+    "displayName": "Wallsend Public",
+    "rawNames": [
+      "Wallsend Public"
+    ]
+  },
+  {
+    "slug": "waratah-w-public",
+    "displayName": "Waratah W Public",
+    "rawNames": [
+      "Waratah W Public"
+    ]
+  },
+  {
+    "slug": "fletcher-evc",
+    "displayName": "Fletcher EVC",
+    "rawNames": [
+      "Fletcher EVC"
+    ]
+  },
+  {
+    "slug": "mayfield-evc",
+    "displayName": "Mayfield EVC",
+    "rawNames": [
+      "Mayfield EVC"
+    ]
+  },
+  {
+    "slug": "wallsend-evc",
+    "displayName": "Wallsend EVC",
+    "rawNames": [
+      "Wallsend EVC"
+    ]
+  },
+  {
+    "slug": "declared-facility-wallsend",
+    "displayName": "Declared Facility (Wallsend)",
+    "rawNames": [
+      "Declared Facility (Wallsend)"
+    ]
+  },
+  {
+    "slug": "absent-wallsend",
+    "displayName": "Absent (Wallsend)",
+    "rawNames": [
+      "Absent (Wallsend)"
+    ]
+  },
+  {
+    "slug": "provisional-wallsend",
+    "displayName": "Provisional (Wallsend)",
+    "rawNames": [
+      "Provisional (Wallsend)"
+    ]
+  },
+  {
+    "slug": "postal-wallsend",
+    "displayName": "Postal (Wallsend)",
+    "rawNames": [
+      "Postal (Wallsend)"
+    ]
+  },
+  {
+    "slug": "fern-bay-hall",
+    "displayName": "Fern Bay Hall",
+    "rawNames": [
+      "Fern Bay Hall"
+    ]
+  },
+  {
+    "slug": "goodlife-church-wickham",
+    "displayName": "Goodlife Church Wickham",
+    "rawNames": [
+      "Goodlife Church Wickham"
+    ]
+  },
+  {
+    "slug": "st-andrews-mayfield",
+    "displayName": "St Andrews Mayfield",
+    "rawNames": [
+      "St Andrews Mayfield"
+    ]
+  },
+  {
+    "slug": "wea-hunter-laman-st-campus",
+    "displayName": "WEA Hunter Laman St Campus",
+    "rawNames": [
+      "WEA Hunter Laman St Campus"
+    ]
+  },
+  {
+    "slug": "newcastle-west-evc",
+    "displayName": "Newcastle West EVC",
+    "rawNames": [
+      "Newcastle West EVC"
+    ]
+  },
+  {
+    "slug": "absent-newcastle",
+    "displayName": "Absent (Newcastle)",
+    "rawNames": [
+      "Absent (Newcastle)"
+    ]
+  },
+  {
+    "slug": "new-lambton-uniting-grinsell-st",
+    "displayName": "New Lambton Uniting -Grinsell St",
+    "rawNames": [
+      "New Lambton Uniting -Grinsell St"
+    ]
+  },
+  {
+    "slug": "redhead-public",
+    "displayName": "Redhead Public",
+    "rawNames": [
+      "Redhead Public"
+    ]
+  },
+  {
+    "slug": "sydney-town-hall",
+    "displayName": "Sydney Town Hall",
+    "rawNames": [
+      "Sydney Town Hall"
+    ]
+  },
+  {
+    "slug": "windale-comm-cntr",
+    "displayName": "Windale Comm. Cntr",
+    "rawNames": [
+      "Windale Comm. Cntr"
+    ]
+  },
+  {
+    "slug": "sydney-town-hall-pre-poll",
+    "displayName": "Sydney Town Hall Pre-Poll",
+    "rawNames": [
+      "Sydney Town Hall Pre-Poll"
+    ]
+  },
+  {
+    "slug": "declared-facility-charlestown",
+    "displayName": "Declared Facility (Charlestown)",
+    "rawNames": [
+      "Declared Facility (Charlestown)"
+    ]
+  },
+  {
+    "slug": "ivote-charlestown",
+    "displayName": "iVote (Charlestown)",
+    "rawNames": [
+      "iVote (Charlestown)"
+    ]
+  },
+  {
+    "slug": "holy-family-merewether",
+    "displayName": "Holy Family Merewether",
+    "rawNames": [
+      "Holy Family Merewether"
+    ]
+  },
+  {
+    "slug": "mayfield-w-public",
+    "displayName": "Mayfield W Public",
+    "rawNames": [
+      "Mayfield W Public"
+    ]
+  },
+  {
+    "slug": "st-matthews-anglican-georgetown",
+    "displayName": "St Matthews Anglican Georgetown",
+    "rawNames": [
+      "St Matthews Anglican Georgetown"
+    ]
+  },
+  {
+    "slug": "tighes-hill-public",
+    "displayName": "Tighes Hill Public",
+    "rawNames": [
+      "Tighes Hill Public"
+    ]
+  },
+  {
+    "slug": "newcastle-em-office",
+    "displayName": "Newcastle EM Office",
+    "rawNames": [
+      "Newcastle EM Office"
+    ]
+  },
+  {
+    "slug": "declared-facility-newcastle",
+    "displayName": "Declared Facility (Newcastle)",
+    "rawNames": [
+      "Declared Facility (Newcastle)"
+    ]
+  },
+  {
+    "slug": "ivote-newcastle",
+    "displayName": "iVote (Newcastle)",
+    "rawNames": [
+      "iVote (Newcastle)"
+    ]
+  },
+  {
+    "slug": "silver-ridge-comm-hall",
+    "displayName": "Silver Ridge Comm. Hall",
+    "rawNames": [
+      "Silver Ridge Comm. Hall"
+    ]
+  },
+  {
+    "slug": "st-john-the-baptist-lambton",
+    "displayName": "St John the Baptist Lambton",
+    "rawNames": [
+      "St John the Baptist Lambton"
+    ]
+  },
+  {
+    "slug": "wallsend-comm-pre-school",
+    "displayName": "Wallsend Comm. Pre-School",
+    "rawNames": [
+      "Wallsend Comm. Pre-School"
+    ]
+  },
+  {
+    "slug": "wallsend-em-office",
+    "displayName": "Wallsend EM Office",
+    "rawNames": [
+      "Wallsend EM Office"
+    ]
+  },
+  {
+    "slug": "ivote-wallsend",
+    "displayName": "iVote (Wallsend)",
+    "rawNames": [
+      "iVote (Wallsend)"
+    ]
+  },
+  {
+    "slug": "cardiff-snr-ctzns-cntr",
+    "displayName": "Cardiff Snr Ctzns Cntr",
+    "rawNames": [
+      "Cardiff Snr Ctzns Cntr"
+    ]
+  },
+  {
+    "slug": "new-lambton-hghts-infants",
+    "displayName": "New Lambton Hghts Infants",
+    "rawNames": [
+      "New Lambton Hghts Infants"
+    ]
+  },
+  {
+    "slug": "valentine-public",
+    "displayName": "Valentine Public",
+    "rawNames": [
+      "Valentine Public"
+    ]
+  },
+  {
+    "slug": "charlestown-ro-pre-poll",
+    "displayName": "Charlestown RO Pre-Poll",
+    "rawNames": [
+      "Charlestown RO Pre-Poll"
+    ]
+  },
+  {
+    "slug": "newcastle-ro-pre-poll",
+    "displayName": "Newcastle RO Pre-Poll",
+    "rawNames": [
+      "Newcastle RO Pre-Poll"
+    ]
+  },
+  {
+    "slug": "declared-institution-charlestown",
+    "displayName": "Declared Institution (Charlestown)",
+    "rawNames": [
+      "Declared Institution (Charlestown)"
+    ]
+  },
+  {
+    "slug": "enrolment-charlestown",
+    "displayName": "Enrolment (Charlestown)",
+    "rawNames": [
+      "Enrolment (Charlestown)"
+    ]
+  },
+  {
+    "slug": "provisional-silent-charlestown",
+    "displayName": "Provisional / Silent (Charlestown)",
+    "rawNames": [
+      "Provisional / Silent (Charlestown)"
+    ]
+  },
+  {
+    "slug": "enrolment-newcastle",
+    "displayName": "Enrolment (Newcastle)",
+    "rawNames": [
+      "Enrolment (Newcastle)"
+    ]
+  },
+  {
+    "slug": "provisional-silent-newcastle",
+    "displayName": "Provisional / Silent (Newcastle)",
+    "rawNames": [
+      "Provisional / Silent (Newcastle)"
+    ]
+  },
+  {
+    "slug": "argenton-comm-hall",
+    "displayName": "Argenton Comm. Hall",
+    "rawNames": [
+      "Argenton Comm. Hall"
+    ]
+  },
+  {
+    "slug": "black-hill-public",
+    "displayName": "Black Hill Public",
+    "rawNames": [
+      "Black Hill Public"
+    ]
+  },
+  {
+    "slug": "wallsend-ro-pre-poll",
+    "displayName": "Wallsend RO Pre-poll",
+    "rawNames": [
+      "Wallsend RO Pre-poll"
+    ]
+  },
+  {
+    "slug": "declared-institution-wallsend",
+    "displayName": "Declared Institution (Wallsend)",
+    "rawNames": [
+      "Declared Institution (Wallsend)"
+    ]
+  },
+  {
+    "slug": "enrolment-wallsend",
+    "displayName": "Enrolment (Wallsend)",
+    "rawNames": [
+      "Enrolment (Wallsend)"
+    ]
+  },
+  {
+    "slug": "provisional-silent-wallsend",
+    "displayName": "Provisional / Silent (Wallsend)",
+    "rawNames": [
+      "Provisional / Silent (Wallsend)"
+    ]
+  },
+  {
+    "slug": "lakeside-school",
+    "displayName": "Lakeside School",
+    "rawNames": [
+      "Lakeside School"
+    ]
+  },
+  {
+    "slug": "wiripaang-public",
+    "displayName": "Wiripaang Public",
+    "rawNames": [
+      "Wiripaang Public"
+    ]
+  },
+  {
+    "slug": "pre-poll-charlestown",
+    "displayName": "Pre-poll (Charlestown)",
+    "rawNames": [
+      "Pre-poll (Charlestown)"
+    ]
+  },
+  {
+    "slug": "provisional-silent-charlestown-1",
+    "displayName": "Provisional/Silent (Charlestown)",
+    "rawNames": [
+      "Provisional/Silent (Charlestown)"
+    ]
+  },
+  {
+    "slug": "pre-poll-newcastle",
+    "displayName": "Pre-poll (Newcastle)",
+    "rawNames": [
+      "Pre-poll (Newcastle)"
+    ]
+  },
+  {
+    "slug": "provisional-silent-newcastle-1",
+    "displayName": "Provisional/Silent (Newcastle)",
+    "rawNames": [
+      "Provisional/Silent (Newcastle)"
+    ]
+  },
+  {
+    "slug": "arcadia-vale-public",
+    "displayName": "Arcadia Vale Public",
+    "rawNames": [
+      "Arcadia Vale Public"
+    ]
+  },
+  {
+    "slug": "barnsley-public",
+    "displayName": "Barnsley Public",
+    "rawNames": [
+      "Barnsley Public"
+    ]
+  },
+  {
+    "slug": "belmont-high",
+    "displayName": "Belmont High",
+    "rawNames": [
+      "Belmont High"
+    ]
+  },
+  {
+    "slug": "belmont-n-hood-cntr",
+    "displayName": "Belmont N'hood Cntr",
+    "rawNames": [
+      "Belmont N'hood Cntr"
+    ]
+  },
+  {
+    "slug": "belmont-public",
+    "displayName": "Belmont Public",
+    "rawNames": [
+      "Belmont Public"
+    ]
+  },
+  {
+    "slug": "belmont-scout-hall",
+    "displayName": "Belmont Scout Hall",
+    "rawNames": [
+      "Belmont Scout Hall"
+    ]
+  },
+  {
+    "slug": "biraban-public",
+    "displayName": "Biraban Public",
+    "rawNames": [
+      "Biraban Public"
+    ]
+  },
+  {
+    "slug": "blackalls-park-public",
+    "displayName": "Blackalls Park Public",
+    "rawNames": [
+      "Blackalls Park Public"
+    ]
+  },
+  {
+    "slug": "blacksmiths-public",
+    "displayName": "Blacksmiths Public",
+    "rawNames": [
+      "Blacksmiths Public"
+    ]
+  },
+  {
+    "slug": "bonnells-bay-youth-and-comm-cntr",
+    "displayName": "Bonnells Bay Youth and Comm Cntr",
+    "rawNames": [
+      "Bonnells Bay Youth and Comm Cntr"
+    ]
+  },
+  {
+    "slug": "booragul-public",
+    "displayName": "Booragul Public",
+    "rawNames": [
+      "Booragul Public"
+    ]
+  },
+  {
+    "slug": "cameron-park-comm-cntr",
+    "displayName": "Cameron Park Comm. Cntr",
+    "rawNames": [
+      "Cameron Park Comm. Cntr"
+    ]
+  },
+  {
+    "slug": "caves-beach-uniting",
+    "displayName": "Caves Beach Uniting",
+    "rawNames": [
+      "Caves Beach Uniting"
+    ]
+  },
+  {
+    "slug": "coal-pt-public",
+    "displayName": "Coal Pt Public",
+    "rawNames": [
+      "Coal Pt Public"
+    ]
+  },
+  {
+    "slug": "cooranbong-public",
+    "displayName": "Cooranbong Public",
+    "rawNames": [
+      "Cooranbong Public"
+    ]
+  },
+  {
+    "slug": "dora-crk-arts-hall",
+    "displayName": "Dora Crk Arts Hall",
+    "rawNames": [
+      "Dora Crk Arts Hall"
+    ]
+  },
+  {
+    "slug": "edgeworth-heights-public",
+    "displayName": "Edgeworth Heights Public",
+    "rawNames": [
+      "Edgeworth Heights Public"
+    ]
+  },
+  {
+    "slug": "fassifern-public",
+    "displayName": "Fassifern Public",
+    "rawNames": [
+      "Fassifern Public"
+    ]
+  },
+  {
+    "slug": "fennell-bay-public",
+    "displayName": "Fennell Bay Public",
+    "rawNames": [
+      "Fennell Bay Public"
+    ]
+  },
+  {
+    "slug": "jewells-public",
+    "displayName": "Jewells Public",
+    "rawNames": [
+      "Jewells Public"
+    ]
+  },
+  {
+    "slug": "kilaben-bay-hall",
+    "displayName": "Kilaben Bay Hall",
+    "rawNames": [
+      "Kilaben Bay Hall"
+    ]
+  },
+  {
+    "slug": "marks-pt-public",
+    "displayName": "Marks Pt Public",
+    "rawNames": [
+      "Marks Pt Public"
+    ]
+  },
+  {
+    "slug": "morisset-public",
+    "displayName": "Morisset Public",
+    "rawNames": [
+      "Morisset Public"
+    ]
+  },
+  {
+    "slug": "nords-wharf-hall",
+    "displayName": "Nords Wharf Hall",
+    "rawNames": [
+      "Nords Wharf Hall"
+    ]
+  },
+  {
+    "slug": "pasterfield-sports",
+    "displayName": "Pasterfield Sports",
+    "rawNames": [
+      "Pasterfield Sports"
+    ]
+  },
+  {
+    "slug": "rathmines-hall",
+    "displayName": "Rathmines Hall",
+    "rawNames": [
+      "Rathmines Hall"
+    ]
+  },
+  {
+    "slug": "speers-pt-masonic",
+    "displayName": "Speers Pt Masonic",
+    "rawNames": [
+      "Speers Pt Masonic"
+    ]
+  },
+  {
+    "slug": "sth-lake-macquarie-sailing-club",
+    "displayName": "Sth Lake Macquarie Sailing Club",
+    "rawNames": [
+      "Sth Lake Macquarie Sailing Club"
+    ]
+  },
+  {
+    "slug": "swansea-public",
+    "displayName": "Swansea Public",
+    "rawNames": [
+      "Swansea Public"
+    ]
+  },
+  {
+    "slug": "teralba-public",
+    "displayName": "Teralba Public",
+    "rawNames": [
+      "Teralba Public"
+    ]
+  },
+  {
+    "slug": "the-swansea-cntr",
+    "displayName": "The Swansea Cntr",
+    "rawNames": [
+      "The Swansea Cntr"
+    ]
+  },
+  {
+    "slug": "toronto-mpc",
+    "displayName": "Toronto MPC",
+    "rawNames": [
+      "Toronto MPC"
+    ]
+  },
+  {
+    "slug": "valentine-hall",
+    "displayName": "Valentine Hall",
+    "rawNames": [
+      "Valentine Hall"
+    ]
+  },
+  {
+    "slug": "w-wallsend-high",
+    "displayName": "W Wallsend High",
+    "rawNames": [
+      "W Wallsend High"
+    ]
+  },
+  {
+    "slug": "wangi-wangi-public",
+    "displayName": "Wangi Wangi Public",
+    "rawNames": [
+      "Wangi Wangi Public"
+    ]
+  },
+  {
+    "slug": "woodrising-neighbourhood-cntr",
+    "displayName": "Woodrising Neighbourhood Cntr",
+    "rawNames": [
+      "Woodrising Neighbourhood Cntr"
+    ]
+  },
+  {
+    "slug": "wyee-public",
+    "displayName": "Wyee Public",
+    "rawNames": [
+      "Wyee Public"
+    ]
+  },
+  {
+    "slug": "belmont-pre-poll",
+    "displayName": "Belmont Pre-Poll",
+    "rawNames": [
+      "Belmont Pre-Poll"
+    ]
+  },
+  {
+    "slug": "cameron-park-pre-poll",
+    "displayName": "Cameron Park Pre-Poll",
+    "rawNames": [
+      "Cameron Park Pre-Poll"
+    ]
+  },
+  {
+    "slug": "charlestown-pre-poll",
+    "displayName": "Charlestown Pre-Poll",
+    "rawNames": [
+      "Charlestown Pre-Poll"
+    ]
+  },
+  {
+    "slug": "cooranbong-pre-poll",
+    "displayName": "Cooranbong Pre-Poll",
+    "rawNames": [
+      "Cooranbong Pre-Poll"
+    ]
+  },
+  {
+    "slug": "speers-point-pre-poll",
+    "displayName": "Speers Point Pre-Poll",
+    "rawNames": [
+      "Speers Point Pre-Poll"
+    ]
+  },
+  {
+    "slug": "swansea-pre-poll",
+    "displayName": "Swansea Pre-Poll",
+    "rawNames": [
+      "Swansea Pre-Poll"
+    ]
+  },
+  {
+    "slug": "toronto-pre-poll",
+    "displayName": "Toronto Pre-Poll",
+    "rawNames": [
+      "Toronto Pre-Poll"
+    ]
+  },
+  {
+    "slug": "declared-institution-lake-macquarie",
+    "displayName": "Declared Institution (Lake Macquarie)",
+    "rawNames": [
+      "Declared Institution (Lake Macquarie)"
+    ]
+  },
+  {
+    "slug": "provisional-lake-macquarie",
+    "displayName": "Provisional (Lake Macquarie)",
+    "rawNames": [
+      "Provisional (Lake Macquarie)"
+    ]
+  },
+  {
+    "slug": "postal-lake-macquarie",
+    "displayName": "Postal (Lake Macquarie)",
+    "rawNames": [
+      "Postal (Lake Macquarie)"
+    ]
+  },
+  {
+    "slug": "declared-institution-north-ward",
+    "displayName": "Declared Institution (North Ward)",
+    "rawNames": [
+      "Declared Institution (North Ward)"
+    ]
+  },
+  {
+    "slug": "provisional-north-ward",
+    "displayName": "Provisional (North Ward)",
+    "rawNames": [
+      "Provisional (North Ward)"
+    ]
+  },
+  {
+    "slug": "postal-north-ward",
+    "displayName": "Postal (North Ward)",
+    "rawNames": [
+      "Postal (North Ward)"
+    ]
+  },
+  {
+    "slug": "hmc-waratah",
+    "displayName": "HMC Waratah",
+    "rawNames": [
+      "HMC Waratah"
+    ]
+  },
+  {
+    "slug": "newcastle-school",
+    "displayName": "Newcastle School",
+    "rawNames": [
+      "Newcastle School"
+    ]
+  },
+  {
+    "slug": "merewether-pre-poll",
+    "displayName": "Merewether Pre-Poll",
+    "rawNames": [
+      "Merewether Pre-Poll"
+    ]
+  },
+  {
+    "slug": "hamilton-comm-hive",
+    "displayName": "Hamilton Comm. Hive",
+    "rawNames": [
+      "Hamilton Comm. Hive"
+    ]
+  },
+  {
+    "slug": "newcastle-ro-office",
+    "displayName": "Newcastle RO Office",
+    "rawNames": [
+      "Newcastle RO Office"
+    ]
+  },
+  {
+    "slug": "enrolment-namav",
+    "displayName": "Enrolment/NAMAV",
+    "rawNames": [
+      "Enrolment/NAMAV"
+    ]
+  },
+  {
+    "slug": "ivote",
+    "displayName": "iVote",
+    "rawNames": [
+      "iVote"
+    ]
+  },
+  {
+    "slug": "jesmond-public",
+    "displayName": "Jesmond Public",
+    "rawNames": [
+      "Jesmond Public"
+    ]
+  },
+  {
+    "slug": "enrolment-provisional",
+    "displayName": "Enrolment/Provisional",
+    "rawNames": [
+      "Enrolment/Provisional"
+    ]
+  },
+  {
+    "slug": "raymond-terrace-newcastle-ppvc",
+    "displayName": "Raymond Terrace NEWCASTLE PPVC",
+    "rawNames": [
+      "Raymond Terrace NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "special-hospital-team-1",
+    "displayName": "Special Hospital Team 1",
+    "rawNames": [
+      "Special Hospital Team 1"
+    ]
+  },
+  {
+    "slug": "special-hospital-team-2",
+    "displayName": "Special Hospital Team 2",
+    "rawNames": [
+      "Special Hospital Team 2"
+    ]
+  },
+  {
+    "slug": "special-hospital-team-3",
+    "displayName": "Special Hospital Team 3",
+    "rawNames": [
+      "Special Hospital Team 3"
+    ]
+  },
+  {
+    "slug": "belmont-newcastle-ppvc",
+    "displayName": "Belmont NEWCASTLE PPVC",
+    "rawNames": [
+      "Belmont NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "east-maitland-newcastle-ppvc",
+    "displayName": "East Maitland NEWCASTLE PPVC",
+    "rawNames": [
+      "East Maitland NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "georgetown",
+    "displayName": "Georgetown",
+    "rawNames": [
+      "Georgetown"
+    ]
+  },
+  {
+    "slug": "edgeworth-newcastle-ppvc",
+    "displayName": "Edgeworth NEWCASTLE PPVC",
+    "rawNames": [
+      "Edgeworth NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "minmi",
+    "displayName": "Minmi",
+    "rawNames": [
+      "Minmi"
+    ]
+  },
+  {
+    "slug": "tighes-hill",
+    "displayName": "Tighes Hill",
+    "rawNames": [
+      "Tighes Hill"
+    ]
+  },
+  {
+    "slug": "beaumont-park",
+    "displayName": "Beaumont Park",
+    "rawNames": [
+      "Beaumont Park"
+    ]
+  },
+  {
+    "slug": "wallsend-east",
+    "displayName": "Wallsend East",
+    "rawNames": [
+      "Wallsend East"
+    ]
+  },
+  {
+    "slug": "mayfield",
+    "displayName": "Mayfield",
+    "rawNames": [
+      "Mayfield"
+    ]
+  },
+  {
+    "slug": "hamilton-north",
+    "displayName": "Hamilton North",
+    "rawNames": [
+      "Hamilton North"
+    ]
+  },
+  {
+    "slug": "cardiff-heights-newcastle",
+    "displayName": "Cardiff Heights (Newcastle)",
+    "rawNames": [
+      "Cardiff Heights (Newcastle)"
+    ]
+  },
+  {
+    "slug": "warabrook",
+    "displayName": "Warabrook",
+    "rawNames": [
+      "Warabrook"
+    ]
+  },
+  {
+    "slug": "pittown",
+    "displayName": "Pittown",
+    "rawNames": [
+      "Pittown"
+    ]
+  },
+  {
+    "slug": "merewether",
+    "displayName": "Merewether",
+    "rawNames": [
+      "Merewether"
+    ]
+  },
+  {
+    "slug": "waratah-west",
+    "displayName": "Waratah West",
+    "rawNames": [
+      "Waratah West"
+    ]
+  },
+  {
+    "slug": "wickham",
+    "displayName": "Wickham",
+    "rawNames": [
+      "Wickham"
+    ]
+  },
+  {
+    "slug": "mayfield-west",
+    "displayName": "Mayfield West",
+    "rawNames": [
+      "Mayfield West"
+    ]
+  },
+  {
+    "slug": "birmingham-gardens-north",
+    "displayName": "Birmingham Gardens North",
+    "rawNames": [
+      "Birmingham Gardens North"
+    ]
+  },
+  {
+    "slug": "cooks-hill",
+    "displayName": "Cooks Hill",
+    "rawNames": [
+      "Cooks Hill"
+    ]
+  },
+  {
+    "slug": "kotara-south-newcastle",
+    "displayName": "Kotara South (Newcastle)",
+    "rawNames": [
+      "Kotara South (Newcastle)"
+    ]
+  },
+  {
+    "slug": "mayfield-south",
+    "displayName": "Mayfield South",
+    "rawNames": [
+      "Mayfield South"
+    ]
+  },
+  {
+    "slug": "islington",
+    "displayName": "Islington",
+    "rawNames": [
+      "Islington"
+    ]
+  },
+  {
+    "slug": "fletcher",
+    "displayName": "Fletcher",
+    "rawNames": [
+      "Fletcher"
+    ]
+  },
+  {
+    "slug": "shortland",
+    "displayName": "Shortland",
+    "rawNames": [
+      "Shortland"
+    ]
+  },
+  {
+    "slug": "merewether-south",
+    "displayName": "Merewether South",
+    "rawNames": [
+      "Merewether South"
+    ]
+  },
+  {
+    "slug": "lambton-east",
+    "displayName": "Lambton East",
+    "rawNames": [
+      "Lambton East"
+    ]
+  },
+  {
+    "slug": "merewether-heights",
+    "displayName": "Merewether Heights",
+    "rawNames": [
+      "Merewether Heights"
+    ]
+  },
+  {
+    "slug": "glendore",
+    "displayName": "Glendore",
+    "rawNames": [
+      "Glendore"
+    ]
+  },
+  {
+    "slug": "jesmond-north",
+    "displayName": "Jesmond North",
+    "rawNames": [
+      "Jesmond North"
+    ]
+  },
+  {
+    "slug": "plattsburg",
+    "displayName": "Plattsburg",
+    "rawNames": [
+      "Plattsburg"
+    ]
+  },
+  {
+    "slug": "adamstown-heights-newcastle",
+    "displayName": "Adamstown Heights (Newcastle)",
+    "rawNames": [
+      "Adamstown Heights (Newcastle)"
+    ]
+  },
+  {
+    "slug": "wallsend",
+    "displayName": "Wallsend",
+    "rawNames": [
+      "Wallsend"
+    ]
+  },
+  {
+    "slug": "lambton",
+    "displayName": "Lambton",
+    "rawNames": [
+      "Lambton"
+    ]
+  },
+  {
+    "slug": "stockton",
+    "displayName": "Stockton",
+    "rawNames": [
+      "Stockton"
+    ]
+  },
+  {
+    "slug": "new-lambton-central",
+    "displayName": "New Lambton Central",
+    "rawNames": [
+      "New Lambton Central"
+    ]
+  },
+  {
+    "slug": "carrington",
+    "displayName": "Carrington",
+    "rawNames": [
+      "Carrington"
+    ]
+  },
+  {
+    "slug": "adamstown-north",
+    "displayName": "Adamstown North",
+    "rawNames": [
+      "Adamstown North"
+    ]
+  },
+  {
+    "slug": "newcastle-city",
+    "displayName": "Newcastle City",
+    "rawNames": [
+      "Newcastle City"
+    ]
+  },
+  {
+    "slug": "maryland",
+    "displayName": "Maryland",
+    "rawNames": [
+      "Maryland"
+    ]
+  },
+  {
+    "slug": "new-lambton-south",
+    "displayName": "New Lambton South",
+    "rawNames": [
+      "New Lambton South"
+    ]
+  },
+  {
+    "slug": "elermore-vale",
+    "displayName": "Elermore Vale",
+    "rawNames": [
+      "Elermore Vale"
+    ]
+  },
+  {
+    "slug": "cooks-hill-south",
+    "displayName": "Cooks Hill South",
+    "rawNames": [
+      "Cooks Hill South"
+    ]
+  },
+  {
+    "slug": "adamstown-south",
+    "displayName": "Adamstown South",
+    "rawNames": [
+      "Adamstown South"
+    ]
+  },
+  {
+    "slug": "new-lambton",
+    "displayName": "New Lambton",
+    "rawNames": [
+      "New Lambton"
+    ]
+  },
+  {
+    "slug": "hamilton-south",
+    "displayName": "Hamilton South",
+    "rawNames": [
+      "Hamilton South"
+    ]
+  },
+  {
+    "slug": "mayfield-east",
+    "displayName": "Mayfield East",
+    "rawNames": [
+      "Mayfield East"
+    ]
+  },
+  {
+    "slug": "waratah",
+    "displayName": "Waratah",
+    "rawNames": [
+      "Waratah"
+    ]
+  },
+  {
+    "slug": "wallsend-south",
+    "displayName": "Wallsend South",
+    "rawNames": [
+      "Wallsend South"
+    ]
+  },
+  {
+    "slug": "the-junction",
+    "displayName": "The Junction",
+    "rawNames": [
+      "The Junction"
+    ]
+  },
+  {
+    "slug": "hamilton",
+    "displayName": "Hamilton",
+    "rawNames": [
+      "Hamilton"
+    ]
+  },
+  {
+    "slug": "charlestown-newcastle-ppvc",
+    "displayName": "Charlestown NEWCASTLE PPVC",
+    "rawNames": [
+      "Charlestown NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "mayfield-newcastle-ppvc",
+    "displayName": "Mayfield NEWCASTLE PPVC",
+    "rawNames": [
+      "Mayfield NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "postal",
+    "displayName": "Postal",
+    "rawNames": [
+      "Postal"
+    ]
+  },
+  {
+    "slug": "newcastle-newcastle-ppvc",
+    "displayName": "Newcastle NEWCASTLE PPVC",
+    "rawNames": [
+      "Newcastle NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "wallsend-newcastle-ppvc",
+    "displayName": "Wallsend NEWCASTLE PPVC",
+    "rawNames": [
+      "Wallsend NEWCASTLE PPVC"
+    ]
+  }
+]

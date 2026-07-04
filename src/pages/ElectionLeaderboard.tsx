@@ -87,8 +87,16 @@ export default function ElectionLeaderboard() {
     rows.sort((a, b) => {
       let cmp = 0;
       if (sortField === 'grnPct') cmp = a.grnPct - b.grnPct;
-      if (sortField === 'grnVotes') cmp = a.grnVotes - b.grnVotes;
-      if (sortField === 'totalVotes') cmp = a.totalVotes - b.totalVotes;
+      if (sortField === 'grnVotes') {
+        const votesA = parseInt(String(a.grnVotes || '').replace(/,/g, '')) || 0;
+        const votesB = parseInt(String(b.grnVotes || '').replace(/,/g, '')) || 0;
+        cmp = votesA - votesB;
+      }
+      if (sortField === 'totalVotes') {
+        const totalA = parseInt(String(a.totalVotes || '').replace(/,/g, '')) || 0;
+        const totalB = parseInt(String(b.totalVotes || '').replace(/,/g, '')) || 0;
+        cmp = totalA - totalB;
+      }
       if (sortField === 'year') cmp = a.electionYear - b.electionYear;
       return sortOrder === 'desc' ? -cmp : cmp;
     });

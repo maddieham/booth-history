@@ -1,31 +1,33 @@
-import { useMemo, useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useMemo, useState } from 'react';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, Calendar, MapPin, BarChart3, Trophy, SlidersHorizontal } from 'lucide-react';
-import boothsData from '../data/booths.json';
+import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
 import type { PollingPlace, Election } from '../types';
+
+const getContestKey = (contest: { contestName: string; division: string }) => {
+  return `${contest.contestName}-${contest.division}`.toLowerCase().replace(/\s+/g, '-');
+};
 
 export default function ElectionDetail() {
   const { id } = useParams<{ id: string }>();
   const [searchTerm, setSearchTerm] = useState('');
   const [showSpecialCategories, setShowSpecialCategories] = useState(false);
-  const [selectedContestIdx, setSelectedContestIdx] = useState(0);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const election = useMemo(() => {
     return (electionsData as Election[]).find(e => e.id === id);
   }, [id]);
 
-  // Reset active contest selection when the election ID changes
-  useEffect(() => {
-    setSelectedContestIdx(0);
-  }, [id]);
+  const activeContestKey = searchParams.get('contest') || '';
 
   // Discover all unique contests (combination of contestName and division) present in this election's results
   const contests = useMemo(() => {
     if (!id) return [];
     const map = new Map<string, { contestName: string; division: string }>();
 
-    (boothsData as PollingPlace[]).forEach(booth => {
+    const booths = getGroupedBooths();
+    booths.forEach(booth => {
       booth.results.forEach(r => {
         if (r.electionId === id) {
           const div = r.division || election?.division || 'Unknown';
@@ -46,6 +48,12 @@ export default function ElectionDetail() {
       return a.division.localeCompare(b.division);
     });
   }, [id]);
+
+  const selectedContestIdx = useMemo(() => {
+    if (!activeContestKey) return 0;
+    const idx = contests.findIndex(c => getContestKey(c) === activeContestKey);
+    return idx !== -1 ? idx : 0;
+  }, [contests, activeContestKey]);
 
   const activeContest = useMemo(() => {
     return contests[selectedContestIdx] || null;
@@ -69,12 +77,14 @@ export default function ElectionDetail() {
       division: string;
     }[] = [];
 
-    (boothsData as PollingPlace[]).forEach(booth => {
-      const contestResults = booth.results.filter(r =>
-        r.electionId === id &&
-        r.contestName === activeContest.contestName &&
-        r.division === activeContest.division
-      );
+    const booths = getGroupedBooths();
+    booths.forEach(booth => {
+      const contestResults = booth.results.filter(r => {
+        const rDiv = r.division || election?.division || 'Unknown';
+        return r.electionId === id &&
+               r.contestName === activeContest.contestName &&
+               rDiv === activeContest.division;
+      });
       if (contestResults.length === 0) return;
 
       const grn = contestResults.find(r => r.party === 'GRN')?.votes || 0;
@@ -215,7 +225,7 @@ export default function ElectionDetail() {
               return (
                 <button
                   key={`${c.contestName}-${c.division}`}
-                  onClick={() => { setSelectedContestIdx(index); setSearchTerm(''); }}
+                  onClick={() => { setSearchParams({ contest: getContestKey(c) }); setSearchTerm(''); }}
                   className={`px-4 py-2 text-sm font-semibold rounded-t-lg border-b-2 transition-all ${isActive
                     ? 'border-greens-600 text-greens-700 bg-greens-50/20'
                     : 'border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300'
