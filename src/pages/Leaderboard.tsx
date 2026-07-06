@@ -18,7 +18,6 @@ import type { Election } from '../types';
 type LeaderboardRow = {
   boothId: string;
   boothName: string;
-  suburb: string;
   lga: string;
   electionId: string;
   electionName: string;
@@ -41,7 +40,7 @@ export default function Leaderboard() {
   const [selectedType, setSelectedType] = useState<string>('All');
   const [selectedLga, setSelectedLga] = useState<string>('All');
   const [selectedDivision, setSelectedDivision] = useState<string>('All');
-  const [suburbSearch, setSuburbSearch] = useState<string>('');
+  const [boothSearch, setBoothSearch] = useState<string>('');
   const [yearMin, setYearMin] = useState<string>('2014');
   const [yearMax, setYearMax] = useState<string>('2026');
 
@@ -105,7 +104,6 @@ export default function Leaderboard() {
         rows.push({
           boothId: booth.id,
           boothName: booth.name,
-          suburb: booth.suburb,
           lga: booth.lga || 'Unknown LGA',
           electionId: contest.electionId,
           electionName: election.name,
@@ -158,8 +156,7 @@ export default function Leaderboard() {
       const matchesType = selectedType === 'All' || row.electionType === selectedType;
       const matchesLga = selectedLga === 'All' || row.lga === selectedLga;
       const matchesDivision = selectedDivision === 'All' || row.division === selectedDivision;
-      const matchesSuburb = row.suburb.toLowerCase().includes(suburbSearch.toLowerCase()) ||
-        row.boothName.toLowerCase().includes(suburbSearch.toLowerCase());
+      const matchesBooth = row.boothName.toLowerCase().includes(boothSearch.toLowerCase());
 
       const year = row.electionYear;
       const matchesYearMin = yearMin ? year >= parseInt(yearMin) : true;
@@ -167,9 +164,9 @@ export default function Leaderboard() {
 
       const matchesSmallBooths = !hideSmallBooths || row.totalVotes >= 100;
 
-      return matchesType && matchesLga && matchesDivision && matchesSuburb && matchesYearMin && matchesYearMax && matchesSmallBooths;
+      return matchesType && matchesLga && matchesDivision && matchesBooth && matchesYearMin && matchesYearMax && matchesSmallBooths;
     });
-  }, [flatData, selectedType, selectedLga, selectedDivision, suburbSearch, yearMin, yearMax, hideSmallBooths]);
+  }, [flatData, selectedType, selectedLga, selectedDivision, boothSearch, yearMin, yearMax, hideSmallBooths]);
 
   // Generate chart data matching filter criteria
   // const chartData = useMemo(() => {
@@ -258,17 +255,17 @@ export default function Leaderboard() {
           Leaderboard Filters
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-          {/* Suburb Search */}
+          {/* Booth Search */}
           <div className="space-y-1">
-            <label className="text-xs text-slate-500 font-semibold">Booth or Suburb</label>
+            <label className="text-xs text-slate-500 font-semibold">Booth Name</label>
             <div className="relative">
               <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400" />
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search booth..."
                 className="w-full bg-slate-50 border border-slate-250 text-slate-900 rounded-lg pl-9 pr-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-greens-500 focus:bg-white transition-all"
-                value={suburbSearch}
-                onChange={e => { setSuburbSearch(e.target.value); setCurrentPage(1); }}
+                value={boothSearch}
+                onChange={e => { setBoothSearch(e.target.value); setCurrentPage(1); }}
               />
             </div>
           </div>

@@ -1,16 +1,24 @@
 import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Search, ChevronRight } from 'lucide-react';
 import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
 
 
 export default function Home() {
-  const [search, setSearch] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const search = searchParams.get('q') || '';
 
   const [showSpecialCategories, setShowSpecialCategories] = useState(false);
 
   const booths = useMemo(() => getGroupedBooths(), []);
+  const electionsMap = useMemo(() => {
+    const map = new Map<string, string>();
+    (electionsData as any[]).forEach(e => {
+      map.set(e.id, e.date);
+    });
+    return map;
+  }, []);
   const totalElectionsCount = electionsData.length;
 
   // Filter and sort booths by latest Greens vote percentage descending
@@ -21,23 +29,30 @@ export default function Home() {
         return false;
       }
       return booth.name.toLowerCase().includes(searchLower) ||
-        booth.suburb.toLowerCase().includes(searchLower) ||
         (booth.rawNames?.some(rawName => rawName.toLowerCase().includes(searchLower)) ?? false);
     });
 
     return list.sort((a, b) => {
       const aLatest = a.results
         .filter(r => r.party === 'GRN')
-        .sort((x, y) => y.electionId.localeCompare(x.electionId))[0];
+        .sort((x, y) => {
+          const dateX = electionsMap.get(x.electionId) || '';
+          const dateY = electionsMap.get(y.electionId) || '';
+          return dateY.localeCompare(dateX);
+        })[0];
       const bLatest = b.results
         .filter(r => r.party === 'GRN')
-        .sort((x, y) => y.electionId.localeCompare(x.electionId))[0];
+        .sort((x, y) => {
+          const dateX = electionsMap.get(x.electionId) || '';
+          const dateY = electionsMap.get(y.electionId) || '';
+          return dateY.localeCompare(dateX);
+        })[0];
 
       const aPct = aLatest ? aLatest.percentage : 0;
       const bPct = bLatest ? bLatest.percentage : 0;
       return bPct - aPct;
     });
-  }, [booths, search, showSpecialCategories]);
+  }, [booths, search, showSpecialCategories, electionsMap]);
 
   return (
     <div className="space-y-6">
@@ -57,10 +72,21 @@ export default function Home() {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
           <input
             type="text"
-            placeholder="Search by booth name or suburb..."
+            placeholder="Search by booth name..."
             className="w-full bg-slate-50 border border-slate-250 text-slate-900 rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-greens-500 focus:bg-white transition-all"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              setSearchParams(prev => {
+                const next = new URLSearchParams(prev);
+                if (value) {
+                  next.set('q', value);
+                } else {
+                  next.delete('q');
+                }
+                return next;
+              }, { replace: true });
+            }}
           />
         </div>
         <div className="flex items-center gap-2 self-start md:self-auto shrink-0 select-none">
@@ -90,7 +116,11 @@ export default function Home() {
               // Get the most recent Greens vote percentage
               const latestResult = booth.results
                 .filter(r => r.party === 'GRN')
-                .sort((a, b) => b.electionId.localeCompare(a.electionId))[0];
+                .sort((a, b) => {
+                  const dateA = electionsMap.get(a.electionId) || '';
+                  const dateB = electionsMap.get(b.electionId) || '';
+                  return dateB.localeCompare(dateA);
+                })[0];
 
               const alpResult = booth.results.find(r => r.party === 'ALP' && r.electionId === latestResult?.electionId);
               const lnpResult = booth.results.find(r => (r.party === 'LNP' || r.party === 'LIB') && r.electionId === latestResult?.electionId);

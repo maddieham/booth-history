@@ -41,7 +41,6 @@ export default function BoothDetail() {
       return {
         id: group.slug,
         name: group.displayName,
-        suburb: rawBooths[0]?.suburb || '',
         division: rawBooths[0]?.division || '',
         lga: rawBooths[0]?.lga,
         lat: rawBooths[0]?.lat || 0,

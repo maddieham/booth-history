@@ -84,11 +84,15 @@ files.forEach(filename => {
   const lgaRaw = parts[1]; // e.g. Newcastle
   const wardRaw = parts[2]; // e.g. Ward1
 
-  // Format ward name nicely (e.g. Ward1 -> Ward 1)
-  const wardName = wardRaw.replace(/([a-zA-Z]+)(\d+)/, '$1 $2');
+  // Format ward name nicely (e.g. Ward1 -> Ward 1, NorthWard -> North Ward)
+  let wardName = wardRaw.replace(/([a-zA-Z]+)(\d+)/, '$1 $2');
+  wardName = wardName.replace(/([a-zA-Z]+)(Ward)/, '$1 $2');
   const lgaName = lgaRaw.replace(/([a-z])([A-Z])/g, '$1 $2'); // e.g. LakeMacquarie -> Lake Macquarie
 
-  const electionId = `${year}-local-${lgaRaw.toLowerCase()}`;
+  let electionId = `${year}-local-${lgaRaw.toLowerCase()}`;
+  if (electionId === '2024-local-lakemacquarie') {
+    electionId = '2024-lake-macquarie-local';
+  }
   console.log(`Parsed electionId: ${electionId}, Ward/Division: ${wardName}`);
 
   // Check if election is in elections.json
@@ -286,14 +290,9 @@ files.forEach(filename => {
     } else {
       const maxId = booths.length > 0 ? Math.max(...booths.map(b => parseInt(b.id) || 0)) : 0;
       const newBoothId = String(maxId + 1);
-      let suburb = rawBoothName;
-      if (rawBoothName.includes('NEWCASTLE')) suburb = 'Newcastle';
-      else if (rawBoothName.includes('(')) suburb = rawBoothName.split('(')[0].trim();
-
       const newBooth: PollingPlace = {
         id: newBoothId,
         name: rawBoothName,
-        suburb,
         division: "Newcastle", // Default current division/electorate
         lga: rawBoothName.toLowerCase().includes('lake') ? "Lake Macquarie City Council" : "City of Newcastle",
         lat: -32.9272,

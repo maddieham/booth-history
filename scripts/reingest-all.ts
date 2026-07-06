@@ -13,7 +13,7 @@ booths.forEach(b => {
     r.electionId !== '2015-state' &&
     r.electionId !== '2014-by-election-charlestown' &&
     r.electionId !== '2014-by-election-newcastle' &&
-    r.electionId !== '2024-lake-macquarie-local' &&
+    !(r.electionId === '2024-lake-macquarie-local' && r.contestName === 'Mayor') &&
     !(r.electionId === '2024-local-newcastle' && r.contestName === 'Mayor') &&
     !(r.electionId === '2021-local-newcastle' && r.contestName === 'Lord Mayoral')
   );
@@ -49,15 +49,9 @@ const addResult = (
 
   if (!booth) {
     const maxId = booths.length > 0 ? Math.max(...booths.map(b => parseInt(b.id) || 0)) : 0;
-    // Determine suburb from rawName
-    const suburb = rawName
-      .replace(/ Public| High| TAFE| Snr Ctzn Cntr| Comm Cntr| Comm. Cntr| Hall| Uniting| Anglican| Baptist| Church of Christ| Presbyterian| Pensioners| Ordinary| East| North| South| West| City| Scout| Neighborhood| Nhood/g, "")
-      .trim();
-
     booth = {
       id: String(maxId + 1),
       name: rawName,
-      suburb,
       division: type === "ordinary" ? (lga === "Lake Macquarie City Council" ? "Shortland" : "Newcastle") : division,
       lga,
       lat: -32.9272,
@@ -923,64 +917,6 @@ addResult("Declared Institution (Lake Macquarie)", "other-dec", "Lake Macquarie"
 addResult("Provisional (Lake Macquarie)", "other-dec", "Lake Macquarie", lgaLakeMac, "2024-lake-macquarie-local", "Mayor", 663, 1066, 621, 280 + 250 + 620, 3500);
 addResult("Postal (Lake Macquarie)", "postal", "Lake Macquarie", lgaLakeMac, "2024-lake-macquarie-local", "Mayor", 664, 3797, 2790, 607 + 783 + 1957, 10598);
 
-
-// 14. 2024 LAKE MACQUARIE NORTH WARD ELECTION
-const raw2024LMNorthWard = `Argenton Comm. Hall	36	14	29	73	0	0	0	152
-Barnsley Public	50	15	28	35	0	0	0	128
-Cameron Park Comm. Cntr	425	209	438	663	4	1	3	1743
-Cardiff Hghts Baptist	256	198	277	376	3	0	3	1113
-Cardiff Nth Public	226	202	204	403	3	1	4	1043
-Cardiff Public	557	320	418	762	16	6	12	2091
-Cardiff Sth Public	306	240	305	605	10	5	3	1474
-Charlestown E Public	152	147	197	344	2	0	0	842
-Charlestown Public	238	290	297	455	8	1	2	1291
-Charlestown Sth Public	196	167	244	337	2	0	4	950
-Dudley Pensioners Hall	168	282	253	365	1	1	0	1070
-Edgeworth Heights Public	188	85	161	335	1	0	1	771
-Edgeworth Public	434	201	259	687	6	0	1	1588
-Elermore Vale Public	36	35	44	53	2	0	2	172
-Garden Suburb Public	264	220	294	372	2	0	4	1156
-Glendale E Public	309	154	225	481	4	1	5	1179
-Hillsborough Public	206	140	264	479	4	1	1	1095
-Kahibah Public	260	296	382	512	1	1	1	1453
-Kotara High	76	66	78	137	1	1	1	360
-Kotara Sth Public	90	101	106	140	2	0	0	439
-Lakelands Hall	322	146	371	467	6	0	0	1312
-Mt Hutton Public	35	24	18	39	0	0	0	116
-Pasterfield Sports	260	123	238	393	2	2	0	1018
-Speers Pt Masonic	359	206	383	560	2	2	0	1512
-W Wallsend High	281	132	186	424	5	0	2	1030
-Wallsend Sth Public	134	127	114	225	0	0	1	601
-Warners Bay High	135	73	186	185	2	0	0	581
-Whitebridge High	173	168	191	307	0	0	1	840`;
-
-raw2024LMNorthWard.split('\n').forEach(line => {
-  const parts = line.split('\t');
-  const name = parts[0].trim();
-  const ind1 = parseNumber(parts[1]);
-  const grn = parseNumber(parts[2]);
-  const lib = parseNumber(parts[3]);
-  const alp = parseNumber(parts[4]);
-  const ind2 = parseNumber(parts[5]);
-  const ind3 = parseNumber(parts[6]);
-  const ind4 = parseNumber(parts[7]);
-  const total = parseNumber(parts[8]);
-
-  addResult(name, "ordinary", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", grn, alp, lib, ind1 + ind2 + ind3 + ind4, total);
-});
-
-// Specials for North Ward
-addResult("Belmont Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 26, 74, 61, 58 + 0 + 0 + 0, 219);
-addResult("Cameron Park Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 387, 2065, 1105, 1063 + 15 + 2 + 5, 4642);
-addResult("Charlestown Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 653, 1663, 1176, 1085 + 12 + 3 + 8, 4600);
-addResult("Cooranbong Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 2, 9, 0, 4 + 0 + 0 + 0, 15);
-addResult("Speers Point Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 222, 937, 842, 691 + 6 + 1 + 5, 2704);
-addResult("Swansea Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 7, 19, 19, 21 + 0 + 0 + 1, 67);
-addResult("Toronto Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 8, 22, 15, 18 + 1 + 0 + 0, 64);
-addResult("Wallsend Pre-Poll", "pre-poll", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 115, 316, 195, 160 + 2 + 0 + 2, 790);
-addResult("Declared Institution (North Ward)", "other-dec", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 2, 16, 15, 8 + 0 + 0 + 0, 41);
-addResult("Provisional (North Ward)", "other-dec", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 316, 441, 226, 330 + 4 + 2 + 4, 1323);
-addResult("Postal (North Ward)", "postal", "North Ward", lgaLakeMac, "2024-lake-macquarie-local", "Councillor", 306, 1346, 978, 909 + 12 + 4 + 13, 3568);
 
 
 // 15. 2024 NEWCASTLE MAYORAL ELECTION

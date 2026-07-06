@@ -30,7 +30,6 @@ export type BoothGroup = {
 export type PollingPlace = {
   id: string;
   name: string;
-  suburb: string;
   division: string;           // current division/ward
   lga?: string;                 // "City of Newcastle" | "Lake Macquarie City Council"
   lat: number;

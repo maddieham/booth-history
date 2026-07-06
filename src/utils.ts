@@ -21,7 +21,6 @@ export function getGroupedBooths(): PollingPlace[] {
       return {
         id: group.slug,
         name: group.displayName,
-        suburb: '',
         division: '',
         lat: 0,
         lng: 0,
@@ -32,7 +31,6 @@ export function getGroupedBooths(): PollingPlace[] {
     return {
       id: group.slug, // Map id to slug for routing
       name: group.displayName,
-      suburb: rawBooths.find(b => b.suburb)?.suburb || rawBooths[0].suburb,
       division: rawBooths.find(b => b.division)?.division || rawBooths[0].division,
       lga: rawBooths.find(b => b.lga)?.lga || rawBooths[0].lga,
       lat: rawBooths.find(b => b.lat)?.lat || rawBooths[0].lat,

@@ -65,6 +65,7 @@ export default function ElectionDetail() {
 
     const list: {
       booth: PollingPlace;
+      boothName: string;
       grn: number;
       grnPct: number;
       alp: number;
@@ -97,6 +98,7 @@ export default function ElectionDetail() {
 
       list.push({
         booth,
+        boothName: contestResults[0]?.boothName || booth.name,
         grn,
         grnPct: parseFloat(((grn / total) * 100).toFixed(2)),
         alp,
@@ -154,8 +156,8 @@ export default function ElectionDetail() {
   // Filtered booth list for table display
   const filteredBoothResults = useMemo(() => {
     const list = divisionBoothResults.filter(r =>
-      r.booth.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      r.booth.suburb.toLowerCase().includes(searchTerm.toLowerCase())
+      r.boothName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      r.booth.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     return list.sort((a, b) => b.grnPct - a.grnPct);
   }, [divisionBoothResults, searchTerm]);
@@ -283,9 +285,11 @@ export default function ElectionDetail() {
                 <div key={tb.booth.id} className="py-2.5 first:pt-0 last:pb-0 flex justify-between items-center">
                   <div className="min-w-0 pr-2">
                     <Link to={`/booth/${tb.booth.id}`} className="font-semibold text-slate-800 hover:text-greens-600 transition-colors truncate block text-sm">
-                      {tb.booth.name}
+                      {tb.boothName}
                     </Link>
-                    <div className="text-[10px] text-slate-450 mt-0.5">{tb.booth.suburb}</div>
+                    {tb.booth.name !== tb.boothName && (
+                      <div className="text-[10px] text-slate-450 mt-0.5">{tb.booth.name}</div>
+                    )}
                   </div>
                   <div className="text-right shrink-0">
                     <div className="text-sm font-mono font-extrabold text-greens-600">{tb.grnPct}%</div>
@@ -356,7 +360,7 @@ export default function ElectionDetail() {
                       <td className="px-5 py-3">
                         <div className="flex flex-wrap items-center gap-2">
                           <Link to={`/booth/${r.booth.id}`} className="font-bold text-slate-955 hover:text-greens-600 transition-colors">
-                            {r.booth.name}
+                            {r.boothName}
                           </Link>
                           {r.booth.type && r.booth.type !== 'ordinary' && (
                             <span className={`border text-[9px] px-1 py-0.2 rounded font-bold font-mono uppercase tracking-wider ${r.booth.type === "pre-poll" ? "bg-amber-50 text-amber-700 border-amber-200" :
@@ -370,7 +374,9 @@ export default function ElectionDetail() {
                             </span>
                           )}
                         </div>
-                        <div className="text-[10px] text-slate-450 mt-0.5">{r.booth.suburb}</div>
+                        {r.booth.name !== r.boothName && (
+                          <div className="text-[10px] text-slate-450 mt-0.5">{r.booth.name}</div>
+                        )}
                       </td>
                       <td className={`px-5 py-3 font-mono font-bold ${isGrnWinner ? 'text-greens-800 bg-greens-100/50' : 'text-greens-650'}`}>
                         {r.grnPct}% <span className="text-[10px] font-normal text-slate-400">({r.grn})</span>

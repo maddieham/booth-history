@@ -86,7 +86,6 @@ if (!fs.existsSync(boothsPath)) {
         }
 
         if (!booth.name || typeof booth.name !== 'string') logError(ctx, 'Missing or invalid "name".');
-        if (typeof booth.suburb !== 'string') logError(ctx, 'Missing or invalid "suburb".'); // could be empty string
         if (typeof booth.division !== 'string') logError(ctx, 'Missing or invalid "division".');
         
         if (booth.lga && typeof booth.lga !== 'string') logError(ctx, 'Invalid "lga".');

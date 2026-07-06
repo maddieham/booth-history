@@ -98,13 +98,6 @@
     ]
   },
   {
-    "slug": "islington-public",
-    "displayName": "Islington Public",
-    "rawNames": [
-      "Islington Public"
-    ]
-  },
-  {
     "slug": "jesmond-nhood-cntr",
     "displayName": "Jesmond Nhood Cntr",
     "rawNames": [
@@ -228,13 +221,6 @@
     "displayName": "Newcastle E Public",
     "rawNames": [
       "Newcastle E Public"
-    ]
-  },
-  {
-    "slug": "newcastle-tafe",
-    "displayName": "Newcastle TAFE",
-    "rawNames": [
-      "Newcastle TAFE"
     ]
   },
   {
@@ -532,13 +518,6 @@
     ]
   },
   {
-    "slug": "windale-public",
-    "displayName": "Windale Public",
-    "rawNames": [
-      "Windale Public"
-    ]
-  },
-  {
     "slug": "adamstown-evc",
     "displayName": "Adamstown EVC",
     "rawNames": [
@@ -742,13 +721,6 @@
     ]
   },
   {
-    "slug": "windale-comm-cntr",
-    "displayName": "Windale Comm. Cntr",
-    "rawNames": [
-      "Windale Comm. Cntr"
-    ]
-  },
-  {
     "slug": "sydney-town-hall-pre-poll",
     "displayName": "Sydney Town Hall Pre-Poll",
     "rawNames": [
@@ -788,13 +760,6 @@
     "displayName": "St Matthews Anglican Georgetown",
     "rawNames": [
       "St Matthews Anglican Georgetown"
-    ]
-  },
-  {
-    "slug": "tighes-hill-public",
-    "displayName": "Tighes Hill Public",
-    "rawNames": [
-      "Tighes Hill Public"
     ]
   },
   {
@@ -1487,7 +1452,9 @@
     "slug": "tighes-hill",
     "displayName": "Tighes Hill",
     "rawNames": [
-      "Tighes Hill"
+      "Tighes Hill",
+      "Newcastle TAFE",
+      "Tighes Hill Public"
     ]
   },
   {
@@ -1599,7 +1566,8 @@
     "slug": "islington",
     "displayName": "Islington",
     "rawNames": [
-      "Islington"
+      "Islington",
+      "Islington Public"
     ]
   },
   {
@@ -1831,6 +1799,722 @@
     "displayName": "Wallsend NEWCASTLE PPVC",
     "rawNames": [
       "Wallsend NEWCASTLE PPVC"
+    ]
+  },
+  {
+    "slug": "lambton-pre-poll",
+    "displayName": "Lambton Pre-Poll",
+    "rawNames": [
+      "Lambton Pre-Poll"
+    ]
+  },
+  {
+    "slug": "adamstown",
+    "displayName": "Adamstown",
+    "rawNames": [
+      "Adamstown"
+    ]
+  },
+  {
+    "slug": "beresfield",
+    "displayName": "Beresfield",
+    "rawNames": [
+      "Beresfield"
+    ]
+  },
+  {
+    "slug": "birmingham-gardens",
+    "displayName": "Birmingham Gardens",
+    "rawNames": [
+      "Birmingham Gardens"
+    ]
+  },
+  {
+    "slug": "blv-newcastle-ppvc",
+    "displayName": "BLV Newcastle PPVC",
+    "rawNames": [
+      "BLV Newcastle PPVC"
+    ]
+  },
+  {
+    "slug": "divisional-office-prepoll",
+    "displayName": "Divisional Office (PREPOLL)",
+    "rawNames": [
+      "Divisional Office (PREPOLL)"
+    ]
+  },
+  {
+    "slug": "fern-bay",
+    "displayName": "Fern Bay",
+    "rawNames": [
+      "Fern Bay"
+    ]
+  },
+  {
+    "slug": "hamilton-central",
+    "displayName": "Hamilton Central",
+    "rawNames": [
+      "Hamilton Central"
+    ]
+  },
+  {
+    "slug": "jesmond",
+    "displayName": "Jesmond",
+    "rawNames": [
+      "Jesmond"
+    ]
+  },
+  {
+    "slug": "kotara-east",
+    "displayName": "Kotara East",
+    "rawNames": [
+      "Kotara East"
+    ]
+  },
+  {
+    "slug": "lambton-newcastle",
+    "displayName": "Lambton (Newcastle)",
+    "rawNames": [
+      "Lambton (Newcastle)"
+    ]
+  },
+  {
+    "slug": "maryville-wickham",
+    "displayName": "Maryville Wickham",
+    "rawNames": [
+      "Maryville Wickham"
+    ]
+  },
+  {
+    "slug": "merewether-west",
+    "displayName": "Merewether West",
+    "rawNames": [
+      "Merewether West"
+    ]
+  },
+  {
+    "slug": "somerset",
+    "displayName": "Somerset",
+    "rawNames": [
+      "Somerset"
+    ]
+  },
+  {
+    "slug": "stockton-south",
+    "displayName": "Stockton South",
+    "rawNames": [
+      "Stockton South"
+    ]
+  },
+  {
+    "slug": "sydney-newcastle",
+    "displayName": "Sydney (Newcastle)",
+    "rawNames": [
+      "Sydney (Newcastle)"
+    ]
+  },
+  {
+    "slug": "tarro",
+    "displayName": "Tarro",
+    "rawNames": [
+      "Tarro"
+    ]
+  },
+  {
+    "slug": "thornton",
+    "displayName": "Thornton",
+    "rawNames": [
+      "Thornton"
+    ]
+  },
+  {
+    "slug": "waratah-east",
+    "displayName": "Waratah East",
+    "rawNames": [
+      "Waratah East"
+    ]
+  },
+  {
+    "slug": "waratah-south",
+    "displayName": "Waratah South",
+    "rawNames": [
+      "Waratah South"
+    ]
+  },
+  {
+    "slug": "williamtown",
+    "displayName": "Williamtown",
+    "rawNames": [
+      "Williamtown"
+    ]
+  },
+  {
+    "slug": "woodberry",
+    "displayName": "Woodberry",
+    "rawNames": [
+      "Woodberry"
+    ]
+  },
+  {
+    "slug": "adamstown-heights-shortland",
+    "displayName": "Adamstown Heights (Shortland)",
+    "rawNames": [
+      "Adamstown Heights (Shortland)"
+    ]
+  },
+  {
+    "slug": "belmont",
+    "displayName": "Belmont",
+    "rawNames": [
+      "Belmont"
+    ]
+  },
+  {
+    "slug": "belmont-central",
+    "displayName": "Belmont Central",
+    "rawNames": [
+      "Belmont Central"
+    ]
+  },
+  {
+    "slug": "belmont-north",
+    "displayName": "Belmont North",
+    "rawNames": [
+      "Belmont North"
+    ]
+  },
+  {
+    "slug": "belmont-west",
+    "displayName": "Belmont West",
+    "rawNames": [
+      "Belmont West"
+    ]
+  },
+  {
+    "slug": "blacksmiths",
+    "displayName": "Blacksmiths",
+    "rawNames": [
+      "Blacksmiths"
+    ]
+  },
+  {
+    "slug": "blv-shortland-ppvc",
+    "displayName": "BLV Shortland PPVC",
+    "rawNames": [
+      "BLV Shortland PPVC"
+    ]
+  },
+  {
+    "slug": "budgewoi",
+    "displayName": "Budgewoi",
+    "rawNames": [
+      "Budgewoi"
+    ]
+  },
+  {
+    "slug": "budgewoi-central",
+    "displayName": "Budgewoi Central",
+    "rawNames": [
+      "Budgewoi Central"
+    ]
+  },
+  {
+    "slug": "buff-point",
+    "displayName": "Buff Point",
+    "rawNames": [
+      "Buff Point"
+    ]
+  },
+  {
+    "slug": "caves-beach",
+    "displayName": "Caves Beach",
+    "rawNames": [
+      "Caves Beach"
+    ]
+  },
+  {
+    "slug": "chain-valley-bay",
+    "displayName": "Chain Valley Bay",
+    "rawNames": [
+      "Chain Valley Bay"
+    ]
+  },
+  {
+    "slug": "charlestown",
+    "displayName": "Charlestown",
+    "rawNames": [
+      "Charlestown"
+    ]
+  },
+  {
+    "slug": "charlestown-east",
+    "displayName": "Charlestown East",
+    "rawNames": [
+      "Charlestown East"
+    ]
+  },
+  {
+    "slug": "charlestown-shortland-ppvc",
+    "displayName": "Charlestown SHORTLAND PPVC",
+    "rawNames": [
+      "Charlestown SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "charlestown-south",
+    "displayName": "Charlestown South",
+    "rawNames": [
+      "Charlestown South"
+    ]
+  },
+  {
+    "slug": "charmhaven",
+    "displayName": "Charmhaven",
+    "rawNames": [
+      "Charmhaven"
+    ]
+  },
+  {
+    "slug": "croudace-bay",
+    "displayName": "Croudace Bay",
+    "rawNames": [
+      "Croudace Bay"
+    ]
+  },
+  {
+    "slug": "dudley",
+    "displayName": "Dudley",
+    "rawNames": [
+      "Dudley"
+    ]
+  },
+  {
+    "slug": "eleebana",
+    "displayName": "Eleebana",
+    "rawNames": [
+      "Eleebana"
+    ]
+  },
+  {
+    "slug": "floraville",
+    "displayName": "Floraville",
+    "rawNames": [
+      "Floraville"
+    ]
+  },
+  {
+    "slug": "gateshead",
+    "displayName": "Gateshead",
+    "rawNames": [
+      "Gateshead"
+    ]
+  },
+  {
+    "slug": "gateshead-west",
+    "displayName": "Gateshead West",
+    "rawNames": [
+      "Gateshead West"
+    ]
+  },
+  {
+    "slug": "gorokan-shortland",
+    "displayName": "Gorokan (Shortland)",
+    "rawNames": [
+      "Gorokan (Shortland)"
+    ]
+  },
+  {
+    "slug": "gwandalan",
+    "displayName": "Gwandalan",
+    "rawNames": [
+      "Gwandalan"
+    ]
+  },
+  {
+    "slug": "hillsborough-shortland",
+    "displayName": "Hillsborough (Shortland)",
+    "rawNames": [
+      "Hillsborough (Shortland)"
+    ]
+  },
+  {
+    "slug": "jewells",
+    "displayName": "Jewells",
+    "rawNames": [
+      "Jewells"
+    ]
+  },
+  {
+    "slug": "kahibah",
+    "displayName": "Kahibah",
+    "rawNames": [
+      "Kahibah"
+    ]
+  },
+  {
+    "slug": "kotara-south-shortland",
+    "displayName": "Kotara South (Shortland)",
+    "rawNames": [
+      "Kotara South (Shortland)"
+    ]
+  },
+  {
+    "slug": "lake-haven",
+    "displayName": "Lake Haven",
+    "rawNames": [
+      "Lake Haven"
+    ]
+  },
+  {
+    "slug": "lake-munmorah",
+    "displayName": "Lake Munmorah",
+    "rawNames": [
+      "Lake Munmorah"
+    ]
+  },
+  {
+    "slug": "mannering-park",
+    "displayName": "Mannering Park",
+    "rawNames": [
+      "Mannering Park"
+    ]
+  },
+  {
+    "slug": "marks-point",
+    "displayName": "Marks Point",
+    "rawNames": [
+      "Marks Point"
+    ]
+  },
+  {
+    "slug": "mount-hutton",
+    "displayName": "Mount Hutton",
+    "rawNames": [
+      "Mount Hutton"
+    ]
+  },
+  {
+    "slug": "newcastle-shortland-ppvc",
+    "displayName": "Newcastle SHORTLAND PPVC",
+    "rawNames": [
+      "Newcastle SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "nords-wharf",
+    "displayName": "Nords Wharf",
+    "rawNames": [
+      "Nords Wharf"
+    ]
+  },
+  {
+    "slug": "pelican",
+    "displayName": "Pelican",
+    "rawNames": [
+      "Pelican"
+    ]
+  },
+  {
+    "slug": "redhead",
+    "displayName": "Redhead",
+    "rawNames": [
+      "Redhead"
+    ]
+  },
+  {
+    "slug": "san-remo",
+    "displayName": "San Remo",
+    "rawNames": [
+      "San Remo"
+    ]
+  },
+  {
+    "slug": "summerland-point",
+    "displayName": "Summerland Point",
+    "rawNames": [
+      "Summerland Point"
+    ]
+  },
+  {
+    "slug": "swansea",
+    "displayName": "Swansea",
+    "rawNames": [
+      "Swansea"
+    ]
+  },
+  {
+    "slug": "swansea-central",
+    "displayName": "Swansea Central",
+    "rawNames": [
+      "Swansea Central"
+    ]
+  },
+  {
+    "slug": "sydney-shortland",
+    "displayName": "Sydney (Shortland)",
+    "rawNames": [
+      "Sydney (Shortland)"
+    ]
+  },
+  {
+    "slug": "toukley-shortland-ppvc",
+    "displayName": "Toukley SHORTLAND PPVC",
+    "rawNames": [
+      "Toukley SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "valentine",
+    "displayName": "Valentine",
+    "rawNames": [
+      "Valentine"
+    ]
+  },
+  {
+    "slug": "warners-bay-shortland",
+    "displayName": "Warners Bay (Shortland)",
+    "rawNames": [
+      "Warners Bay (Shortland)"
+    ]
+  },
+  {
+    "slug": "warners-bay-central",
+    "displayName": "Warners Bay Central",
+    "rawNames": [
+      "Warners Bay Central"
+    ]
+  },
+  {
+    "slug": "whitebridge",
+    "displayName": "Whitebridge",
+    "rawNames": [
+      "Whitebridge"
+    ]
+  },
+  {
+    "slug": "windale",
+    "displayName": "Windale",
+    "rawNames": [
+      "Windale",
+      "Windale Public",
+      "Windale Comm. Cntr"
+    ]
+  },
+  {
+    "slug": "elermore-vale-newcastle",
+    "displayName": "Elermore Vale (Newcastle)",
+    "rawNames": [
+      "Elermore Vale (Newcastle)"
+    ]
+  },
+  {
+    "slug": "silver-ridge",
+    "displayName": "Silver Ridge",
+    "rawNames": [
+      "Silver Ridge"
+    ]
+  },
+  {
+    "slug": "cardiff",
+    "displayName": "Cardiff",
+    "rawNames": [
+      "Cardiff"
+    ]
+  },
+  {
+    "slug": "cardiff-heights-shortland",
+    "displayName": "Cardiff Heights (Shortland)",
+    "rawNames": [
+      "Cardiff Heights (Shortland)"
+    ]
+  },
+  {
+    "slug": "cardiff-north",
+    "displayName": "Cardiff North",
+    "rawNames": [
+      "Cardiff North"
+    ]
+  },
+  {
+    "slug": "cardiff-south",
+    "displayName": "Cardiff South",
+    "rawNames": [
+      "Cardiff South"
+    ]
+  },
+  {
+    "slug": "charmhaven-shortland-ppvc",
+    "displayName": "Charmhaven SHORTLAND PPVC",
+    "rawNames": [
+      "Charmhaven SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "garden-suburb",
+    "displayName": "Garden Suburb",
+    "rawNames": [
+      "Garden Suburb"
+    ]
+  },
+  {
+    "slug": "hillsborough",
+    "displayName": "Hillsborough",
+    "rawNames": [
+      "Hillsborough"
+    ]
+  },
+  {
+    "slug": "speers-point",
+    "displayName": "Speers Point",
+    "rawNames": [
+      "Speers Point"
+    ]
+  },
+  {
+    "slug": "toronto-shortland-ppvc",
+    "displayName": "Toronto SHORTLAND PPVC",
+    "rawNames": [
+      "Toronto SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "warners-bay",
+    "displayName": "Warners Bay",
+    "rawNames": [
+      "Warners Bay"
+    ]
+  },
+  {
+    "slug": "warners-bay-north",
+    "displayName": "Warners Bay North",
+    "rawNames": [
+      "Warners Bay North"
+    ]
+  },
+  {
+    "slug": "wallsend-ppvc",
+    "displayName": "Wallsend PPVC",
+    "rawNames": [
+      "Wallsend PPVC"
+    ]
+  },
+  {
+    "slug": "belmont-ppvc",
+    "displayName": "Belmont PPVC",
+    "rawNames": [
+      "Belmont PPVC"
+    ]
+  },
+  {
+    "slug": "edgeworth-shortland-ppvc",
+    "displayName": "Edgeworth SHORTLAND PPVC",
+    "rawNames": [
+      "Edgeworth SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "valentine-west",
+    "displayName": "Valentine West",
+    "rawNames": [
+      "Valentine West"
+    ]
+  },
+  {
+    "slug": "eav-covid19-newcastle-ppvc",
+    "displayName": "EAV COVID19 Newcastle PPVC",
+    "rawNames": [
+      "EAV COVID19 Newcastle PPVC"
+    ]
+  },
+  {
+    "slug": "eav-newcastle-ppvc",
+    "displayName": "EAV Newcastle PPVC",
+    "rawNames": [
+      "EAV Newcastle PPVC"
+    ]
+  },
+  {
+    "slug": "eav-covid19-shortland-ppvc",
+    "displayName": "EAV COVID19 Shortland PPVC",
+    "rawNames": [
+      "EAV COVID19 Shortland PPVC"
+    ]
+  },
+  {
+    "slug": "eav-shortland-ppvc",
+    "displayName": "EAV Shortland PPVC",
+    "rawNames": [
+      "EAV Shortland PPVC"
+    ]
+  },
+  {
+    "slug": "wallsend-shortland-ppvc",
+    "displayName": "Wallsend SHORTLAND PPVC",
+    "rawNames": [
+      "Wallsend SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "wyong-shortland-ppvc",
+    "displayName": "Wyong SHORTLAND PPVC",
+    "rawNames": [
+      "Wyong SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "argenton",
+    "displayName": "Argenton",
+    "rawNames": [
+      "Argenton"
+    ]
+  },
+  {
+    "slug": "belmont-shortland-ppvc",
+    "displayName": "Belmont SHORTLAND PPVC",
+    "rawNames": [
+      "Belmont SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "blue-haven-shortland-ppvc",
+    "displayName": "Blue Haven SHORTLAND PPVC",
+    "rawNames": [
+      "Blue Haven SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "glendale",
+    "displayName": "Glendale",
+    "rawNames": [
+      "Glendale"
+    ]
+  },
+  {
+    "slug": "kanwal-shortland-ppvc",
+    "displayName": "Kanwal SHORTLAND PPVC",
+    "rawNames": [
+      "Kanwal SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "lake-munmorah-ppvc",
+    "displayName": "Lake Munmorah PPVC",
+    "rawNames": [
+      "Lake Munmorah PPVC"
+    ]
+  },
+  {
+    "slug": "mayfield-shortland-ppvc",
+    "displayName": "Mayfield SHORTLAND PPVC",
+    "rawNames": [
+      "Mayfield SHORTLAND PPVC"
+    ]
+  },
+  {
+    "slug": "swansea-ppvc",
+    "displayName": "Swansea PPVC",
+    "rawNames": [
+      "Swansea PPVC"
     ]
   }
 ]

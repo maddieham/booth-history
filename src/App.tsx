@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Home as HomeIcon, Trophy, Vote, BarChart3 } from 'lucide-react';
 import Home from './pages/Home';
 import BoothDetail from './pages/BoothDetail';
