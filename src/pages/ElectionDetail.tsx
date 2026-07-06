@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useParams, Link, useSearchParams } from 'react-router-dom';
-import { ArrowLeft, Calendar, MapPin, BarChart3, Trophy, SlidersHorizontal } from 'lucide-react';
+import { ArrowLeft, Calendar, BarChart3, Trophy, SlidersHorizontal, ArrowUp, ArrowDown, ArrowUpDown } from 'lucide-react';
 import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
 import type { PollingPlace, Election } from '../types';
@@ -12,7 +12,8 @@ const getContestKey = (contest: { contestName: string; division: string }) => {
 export default function ElectionDetail() {
   const { id } = useParams<{ id: string }>();
   const [searchTerm, setSearchTerm] = useState('');
-  const [showSpecialCategories, setShowSpecialCategories] = useState(false);
+  const [sortField, setSortField] = useState<'name' | 'grnPct' | 'alpPct' | 'lnpPct' | 'othPct' | 'total'>('grnPct');
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [searchParams, setSearchParams] = useSearchParams();
 
   const election = useMemo(() => {
@@ -115,14 +116,8 @@ export default function ElectionDetail() {
     return list;
   }, [id, activeContest, election]);
 
-  // Filter booth results based on special categories toggle
-  const divisionBoothResults = useMemo(() => {
-    let list = allBoothResults;
-    if (!showSpecialCategories) {
-      list = list.filter(r => !r.booth.type || r.booth.type === 'ordinary');
-    }
-    return list;
-  }, [allBoothResults, showSpecialCategories]);
+  // divisionBoothResults includes all booths (early, postal, absent, declaration, etc.)
+  const divisionBoothResults = allBoothResults;
 
   // Calculate totals for the selected contest (includes all data regardless of checkbox)
   const overallTotals = useMemo(() => {
@@ -159,8 +154,33 @@ export default function ElectionDetail() {
       r.boothName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       r.booth.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    return list.sort((a, b) => b.grnPct - a.grnPct);
-  }, [divisionBoothResults, searchTerm]);
+    return list.sort((a, b) => {
+      let comparison = 0;
+      if (sortField === 'name') {
+        comparison = a.boothName.localeCompare(b.boothName);
+      } else if (sortField === 'grnPct') {
+        comparison = a.grnPct - b.grnPct;
+      } else if (sortField === 'alpPct') {
+        comparison = a.alpPct - b.alpPct;
+      } else if (sortField === 'lnpPct') {
+        comparison = a.lnpPct - b.lnpPct;
+      } else if (sortField === 'othPct') {
+        comparison = a.othPct - b.othPct;
+      } else if (sortField === 'total') {
+        comparison = a.total - b.total;
+      }
+      return sortOrder === 'desc' ? -comparison : comparison;
+    });
+  }, [divisionBoothResults, searchTerm, sortField, sortOrder]);
+
+  const handleSort = (field: 'name' | 'grnPct' | 'alpPct' | 'lnpPct' | 'othPct' | 'total') => {
+    if (sortField === field) {
+      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortField(field);
+      setSortOrder('desc');
+    }
+  };
 
   // Sort booths by Greens percentage descending to get top booths in current context
   const topGreensBooths = useMemo(() => {
@@ -200,11 +220,6 @@ export default function ElectionDetail() {
               <span className="flex items-center gap-1">
                 <Calendar className="w-4 h-4 text-slate-400" />
                 {election.date}
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1">
-                <MapPin className="w-4 h-4 text-slate-400" />
-                Region: <strong className="text-slate-800">{election.division}</strong>
               </span>
             </div>
           </div>
@@ -312,18 +327,6 @@ export default function ElectionDetail() {
             Booths: {filteredBoothResults.length} / {divisionBoothResults.length}
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-            <div className="flex items-center gap-2 select-none self-start sm:self-auto shrink-0">
-              <input
-                type="checkbox"
-                id="special-categories"
-                checked={showSpecialCategories}
-                onChange={(e) => setShowSpecialCategories(e.target.checked)}
-                className="w-4 h-4 text-greens-600 border-slate-300 rounded focus:ring-greens-500 cursor-pointer"
-              />
-              <label htmlFor="special-categories" className="text-xs font-semibold text-slate-655 cursor-pointer">
-                Show Early Voting & Decs
-              </label>
-            </div>
             <input
               type="text"
               placeholder="Search booth name..."
@@ -336,14 +339,106 @@ export default function ElectionDetail() {
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs">
-            <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold uppercase tracking-wider">
+            <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold text-xs uppercase tracking-wider">
               <tr>
-                <th className="px-5 py-3.5">Polling Place</th>
-                <th className="px-5 py-3.5 text-greens-700">Greens %</th>
-                <th className="px-5 py-3.5 text-red-750">ALP %</th>
-                <th className="px-5 py-3.5 text-blue-750">LNP %</th>
-                <th className="px-5 py-3.5 text-slate-500">Others %</th>
-                <th className="px-5 py-3.5 text-right">Total Votes</th>
+                <th
+                  className={`px-5 py-3.5 cursor-pointer transition-colors select-none whitespace-nowrap ${
+                    sortField === 'name' ? 'bg-slate-100 text-slate-900 font-bold' : 'hover:bg-slate-100/60'
+                  }`}
+                  onClick={() => handleSort('name')}
+                >
+                  <div className="flex items-center gap-1">
+                    <span>Polling Place</span>
+                    {sortField === 'name' ? (
+                      sortOrder === 'asc' ? <ArrowUp className="w-3.5 h-3.5" /> : <ArrowDown className="w-3.5 h-3.5" />
+                    ) : (
+                      <ArrowUpDown className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                    )}
+                  </div>
+                </th>
+                <th
+                  className={`px-5 py-3.5 cursor-pointer transition-colors select-none whitespace-nowrap ${
+                    sortField === 'grnPct'
+                      ? 'bg-greens-50/50 text-greens-900 font-bold'
+                      : 'hover:bg-slate-100/60 text-greens-700'
+                  }`}
+                  onClick={() => handleSort('grnPct')}
+                >
+                  <div className="flex items-center gap-1">
+                    <span>Greens %</span>
+                    {sortField === 'grnPct' ? (
+                      sortOrder === 'asc' ? <ArrowUp className="w-3.5 h-3.5 text-greens-600" /> : <ArrowDown className="w-3.5 h-3.5 text-greens-600" />
+                    ) : (
+                      <ArrowUpDown className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                    )}
+                  </div>
+                </th>
+                <th
+                  className={`px-5 py-3.5 cursor-pointer transition-colors select-none whitespace-nowrap ${
+                    sortField === 'alpPct'
+                      ? 'bg-red-50/50 text-red-900 font-bold'
+                      : 'hover:bg-slate-100/60 text-red-750'
+                  }`}
+                  onClick={() => handleSort('alpPct')}
+                >
+                  <div className="flex items-center gap-1">
+                    <span>ALP %</span>
+                    {sortField === 'alpPct' ? (
+                      sortOrder === 'asc' ? <ArrowUp className="w-3.5 h-3.5 text-red-600" /> : <ArrowDown className="w-3.5 h-3.5 text-red-600" />
+                    ) : (
+                      <ArrowUpDown className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                    )}
+                  </div>
+                </th>
+                <th
+                  className={`px-5 py-3.5 cursor-pointer transition-colors select-none whitespace-nowrap ${
+                    sortField === 'lnpPct'
+                      ? 'bg-blue-50/50 text-blue-900 font-bold'
+                      : 'hover:bg-slate-100/60 text-blue-750'
+                  }`}
+                  onClick={() => handleSort('lnpPct')}
+                >
+                  <div className="flex items-center gap-1">
+                    <span>LNP %</span>
+                    {sortField === 'lnpPct' ? (
+                      sortOrder === 'asc' ? <ArrowUp className="w-3.5 h-3.5 text-blue-600" /> : <ArrowDown className="w-3.5 h-3.5 text-blue-600" />
+                    ) : (
+                      <ArrowUpDown className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                    )}
+                  </div>
+                </th>
+                <th
+                  className={`px-5 py-3.5 cursor-pointer transition-colors select-none whitespace-nowrap ${
+                    sortField === 'othPct'
+                      ? 'bg-slate-100 text-slate-900 font-bold'
+                      : 'hover:bg-slate-100/60 text-slate-500'
+                  }`}
+                  onClick={() => handleSort('othPct')}
+                >
+                  <div className="flex items-center gap-1">
+                    <span>Others %</span>
+                    {sortField === 'othPct' ? (
+                      sortOrder === 'asc' ? <ArrowUp className="w-3.5 h-3.5 text-slate-600" /> : <ArrowDown className="w-3.5 h-3.5 text-slate-600" />
+                    ) : (
+                      <ArrowUpDown className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                    )}
+                  </div>
+                </th>
+                <th
+                  className={`px-5 py-3.5 cursor-pointer transition-colors select-none whitespace-nowrap text-right ${
+                    sortField === 'total' ? 'bg-slate-100 text-slate-900 font-bold' : 'hover:bg-slate-100/60 text-slate-550'
+                  }`}
+                  onClick={() => handleSort('total')}
+                >
+                  <div className="flex items-center justify-end gap-1">
+                    <span>Total Votes</span>
+                    {sortField === 'total' ? (
+                      sortOrder === 'asc' ? <ArrowUp className="w-3.5 h-3.5 text-slate-800" /> : <ArrowDown className="w-3.5 h-3.5 text-slate-800" />
+                    ) : (
+                      <ArrowUpDown className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                    )}
+                  </div>
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-150 text-slate-700">

@@ -90,8 +90,8 @@ files.forEach(filename => {
   const lgaName = lgaRaw.replace(/([a-z])([A-Z])/g, '$1 $2'); // e.g. LakeMacquarie -> Lake Macquarie
 
   let electionId = `${year}-local-${lgaRaw.toLowerCase()}`;
-  if (electionId === '2024-local-lakemacquarie') {
-    electionId = '2024-lake-macquarie-local';
+  if (electionId.endsWith('-lakemacquarie')) {
+    electionId = `${year}-lake-macquarie-local`;
   }
   console.log(`Parsed electionId: ${electionId}, Ward/Division: ${wardName}`);
 

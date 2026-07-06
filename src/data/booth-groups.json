@@ -1,12 +1,5 @@
 [
   {
-    "slug": "beresfield-public",
-    "displayName": "Beresfield Public",
-    "rawNames": [
-      "Beresfield Public"
-    ]
-  },
-  {
     "slug": "callaghan-cllg-jesmond-snr",
     "displayName": "Callaghan Cllg - Jesmond Snr",
     "rawNames": [
@@ -49,27 +42,6 @@
     ]
   },
   {
-    "slug": "hamilton-nth-public",
-    "displayName": "Hamilton Nth Public",
-    "rawNames": [
-      "Hamilton Nth Public"
-    ]
-  },
-  {
-    "slug": "hamilton-sth-comm-hall",
-    "displayName": "Hamilton Sth Comm. Hall",
-    "rawNames": [
-      "Hamilton Sth Comm. Hall"
-    ]
-  },
-  {
-    "slug": "hamilton-sth-public",
-    "displayName": "Hamilton Sth Public",
-    "rawNames": [
-      "Hamilton Sth Public"
-    ]
-  },
-  {
     "slug": "icc-newcastle",
     "displayName": "ICC Newcastle",
     "rawNames": [
@@ -77,31 +49,10 @@
     ]
   },
   {
-    "slug": "jesmond-nhood-cntr",
-    "displayName": "Jesmond Nhood Cntr",
-    "rawNames": [
-      "Jesmond Nhood Cntr"
-    ]
-  },
-  {
     "slug": "kotara-sth-public",
     "displayName": "Kotara Sth Public",
     "rawNames": [
       "Kotara Sth Public"
-    ]
-  },
-  {
-    "slug": "lambton-high",
-    "displayName": "Lambton High",
-    "rawNames": [
-      "Lambton High"
-    ]
-  },
-  {
-    "slug": "lambton-public",
-    "displayName": "Lambton Public",
-    "rawNames": [
-      "Lambton Public"
     ]
   },
   {
@@ -147,13 +98,6 @@
     ]
   },
   {
-    "slug": "our-lady-of-victories-shortland",
-    "displayName": "Our Lady of Victories Shortland",
-    "rawNames": [
-      "Our Lady of Victories Shortland"
-    ]
-  },
-  {
     "slug": "shortland-public",
     "displayName": "Shortland Public",
     "rawNames": [
@@ -189,13 +133,6 @@
     ]
   },
   {
-    "slug": "stockton-public",
-    "displayName": "Stockton Public",
-    "rawNames": [
-      "Stockton Public"
-    ]
-  },
-  {
     "slug": "tarro-hall",
     "displayName": "Tarro Hall",
     "rawNames": [
@@ -207,20 +144,6 @@
     "displayName": "Wallsend Sth Public",
     "rawNames": [
       "Wallsend Sth Public"
-    ]
-  },
-  {
-    "slug": "warabrook-comm-cntr",
-    "displayName": "Warabrook Comm. Cntr",
-    "rawNames": [
-      "Warabrook Comm. Cntr"
-    ]
-  },
-  {
-    "slug": "waratah-public",
-    "displayName": "Waratah Public",
-    "rawNames": [
-      "Waratah Public"
     ]
   },
   {
@@ -294,27 +217,6 @@
     ]
   },
   {
-    "slug": "cardiff-hghts-baptist",
-    "displayName": "Cardiff Hghts Baptist",
-    "rawNames": [
-      "Cardiff Hghts Baptist"
-    ]
-  },
-  {
-    "slug": "cardiff-public",
-    "displayName": "Cardiff Public",
-    "rawNames": [
-      "Cardiff Public"
-    ]
-  },
-  {
-    "slug": "cardiff-sth-public",
-    "displayName": "Cardiff Sth Public",
-    "rawNames": [
-      "Cardiff Sth Public"
-    ]
-  },
-  {
     "slug": "eleebana-public",
     "displayName": "Eleebana Public",
     "rawNames": [
@@ -329,24 +231,10 @@
     ]
   },
   {
-    "slug": "hillsborough-public",
-    "displayName": "Hillsborough Public",
-    "rawNames": [
-      "Hillsborough Public"
-    ]
-  },
-  {
     "slug": "hunter-sports-high",
     "displayName": "Hunter Sports High",
     "rawNames": [
       "Hunter Sports High"
-    ]
-  },
-  {
-    "slug": "kahibah-public",
-    "displayName": "Kahibah Public",
-    "rawNames": [
-      "Kahibah Public"
     ]
   },
   {
@@ -375,13 +263,6 @@
     "displayName": "Warners Bay Public",
     "rawNames": [
       "Warners Bay Public"
-    ]
-  },
-  {
-    "slug": "whitebridge-high",
-    "displayName": "Whitebridge High",
-    "rawNames": [
-      "Whitebridge High"
     ]
   },
   {
@@ -438,13 +319,6 @@
     "displayName": "Postal (Charlestown)",
     "rawNames": [
       "Postal (Charlestown)"
-    ]
-  },
-  {
-    "slug": "cardiff-nth-public",
-    "displayName": "Cardiff Nth Public",
-    "rawNames": [
-      "Cardiff Nth Public"
     ]
   },
   {
@@ -1265,14 +1139,16 @@
     "slug": "beaumont-park",
     "displayName": "Beaumont Park",
     "rawNames": [
-      "Beaumont Park"
+      "Beaumont Park",
+      "Hamilton Sth Comm. Hall"
     ]
   },
   {
     "slug": "wallsend-east",
     "displayName": "Wallsend East",
     "rawNames": [
-      "Wallsend East"
+      "Wallsend East",
+      "Jesmond Nhood Cntr"
     ]
   },
   {
@@ -1288,21 +1164,25 @@
     "slug": "hamilton-north",
     "displayName": "Hamilton North",
     "rawNames": [
-      "Hamilton North"
+      "Hamilton North",
+      "Hamilton Nth Public"
     ]
   },
   {
-    "slug": "cardiff-heights-newcastle",
-    "displayName": "Cardiff Heights (Newcastle)",
+    "slug": "cardiff-heights",
+    "displayName": "Cardiff Heights",
     "rawNames": [
-      "Cardiff Heights (Newcastle)"
+      "Cardiff Heights (Newcastle)",
+      "Cardiff Hghts Baptist",
+      "Cardiff Heights (Shortland)"
     ]
   },
   {
     "slug": "warabrook",
     "displayName": "Warabrook",
     "rawNames": [
-      "Warabrook"
+      "Warabrook",
+      "Warabrook Comm. Cntr"
     ]
   },
   {
@@ -1349,7 +1229,8 @@
     "slug": "birmingham-gardens-north",
     "displayName": "Birmingham Gardens North",
     "rawNames": [
-      "Birmingham Gardens North"
+      "Birmingham Gardens North",
+      "Our Lady of Victories Shortland"
     ]
   },
   {
@@ -1410,7 +1291,8 @@
     "slug": "lambton-east",
     "displayName": "Lambton East",
     "rawNames": [
-      "Lambton East"
+      "Lambton East",
+      "Lambton High"
     ]
   },
   {
@@ -1442,7 +1324,7 @@
     ]
   },
   {
-    "slug": "adamstown-heights-newcastle",
+    "slug": "adamstown-heights",
     "displayName": "Adamstown Heights",
     "rawNames": [
       "Adamstown Heights (Newcastle)",
@@ -1461,14 +1343,16 @@
     "slug": "lambton",
     "displayName": "Lambton",
     "rawNames": [
-      "Lambton"
+      "Lambton",
+      "Lambton Public"
     ]
   },
   {
     "slug": "stockton",
     "displayName": "Stockton",
     "rawNames": [
-      "Stockton"
+      "Stockton",
+      "Stockton Public"
     ]
   },
   {
@@ -1551,7 +1435,8 @@
     "slug": "hamilton-south",
     "displayName": "Hamilton South",
     "rawNames": [
-      "Hamilton South"
+      "Hamilton South",
+      "Hamilton Sth Public"
     ]
   },
   {
@@ -1566,7 +1451,8 @@
     "slug": "waratah",
     "displayName": "Waratah",
     "rawNames": [
-      "Waratah"
+      "Waratah",
+      "Waratah Public"
     ]
   },
   {
@@ -1631,7 +1517,8 @@
     "slug": "beresfield",
     "displayName": "Beresfield",
     "rawNames": [
-      "Beresfield"
+      "Beresfield",
+      "Beresfield Public"
     ]
   },
   {
@@ -1933,13 +1820,6 @@
     ]
   },
   {
-    "slug": "hillsborough-shortland",
-    "displayName": "Hillsborough (Shortland)",
-    "rawNames": [
-      "Hillsborough (Shortland)"
-    ]
-  },
-  {
     "slug": "jewells",
     "displayName": "Jewells",
     "rawNames": [
@@ -1950,7 +1830,8 @@
     "slug": "kahibah",
     "displayName": "Kahibah",
     "rawNames": [
-      "Kahibah"
+      "Kahibah",
+      "Kahibah Public"
     ]
   },
   {
@@ -2090,7 +1971,8 @@
     "slug": "whitebridge",
     "displayName": "Whitebridge",
     "rawNames": [
-      "Whitebridge"
+      "Whitebridge",
+      "Whitebridge High"
     ]
   },
   {
@@ -2120,28 +2002,24 @@
     "slug": "cardiff",
     "displayName": "Cardiff",
     "rawNames": [
-      "Cardiff"
-    ]
-  },
-  {
-    "slug": "cardiff-heights-shortland",
-    "displayName": "Cardiff Heights (Shortland)",
-    "rawNames": [
-      "Cardiff Heights (Shortland)"
+      "Cardiff",
+      "Cardiff Public"
     ]
   },
   {
     "slug": "cardiff-north",
     "displayName": "Cardiff North",
     "rawNames": [
-      "Cardiff North"
+      "Cardiff North",
+      "Cardiff Nth Public"
     ]
   },
   {
     "slug": "cardiff-south",
     "displayName": "Cardiff South",
     "rawNames": [
-      "Cardiff South"
+      "Cardiff South",
+      "Cardiff Sth Public"
     ]
   },
   {
@@ -2163,7 +2041,9 @@
     "slug": "hillsborough",
     "displayName": "Hillsborough",
     "rawNames": [
-      "Hillsborough"
+      "Hillsborough",
+      "Hillsborough Public",
+      "Hillsborough (Shortland)"
     ]
   },
   {
@@ -2353,6 +2233,34 @@
     "displayName": "Postal",
     "rawNames": [
       "Postal"
+    ]
+  },
+  {
+    "slug": "bolton-pt-hall",
+    "displayName": "Bolton Pt Hall",
+    "rawNames": [
+      "Bolton Pt Hall"
+    ]
+  },
+  {
+    "slug": "bonnells-bay-public",
+    "displayName": "Bonnells Bay Public",
+    "rawNames": [
+      "Bonnells Bay Public"
+    ]
+  },
+  {
+    "slug": "speers-pt-public",
+    "displayName": "Speers Pt Public",
+    "rawNames": [
+      "Speers Pt Public"
+    ]
+  },
+  {
+    "slug": "wyee-hall",
+    "displayName": "Wyee Hall",
+    "rawNames": [
+      "Wyee Hall"
     ]
   }
 ]

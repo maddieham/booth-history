@@ -91,5 +91,12 @@
     "date": "2021-12-04",
     "type": "local",
     "division": "Newcastle"
+  },
+  {
+    "id": "2021-lake-macquarie-local",
+    "name": "2021 Lake Macquarie Local Election",
+    "date": "2021-09-14",
+    "type": "local",
+    "division": "Lake Macquarie"
   }
 ]
