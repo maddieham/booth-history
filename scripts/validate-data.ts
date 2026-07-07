@@ -65,6 +65,7 @@ console.log(`Elections validation complete. Processed ${elections.length} electi
 // 2. Validate Booths
 console.log('--- Validating booths.json ---');
 let booths: any[] = [];
+const resultsSignatures = new Map<string, Array<{ id: string, name: string }>>();
 
 if (!fs.existsSync(boothsPath)) {
   logError('File', 'booths.json not found.');
@@ -101,6 +102,9 @@ if (!fs.existsSync(boothsPath)) {
           // Check for empty results array which might be an anomaly depending on expected data state, but technically valid type-wise.
           if (booth.results.length === 0) logWarn(ctx, 'Booth has empty results array.');
 
+          // Group this booth's results by (electionId, contestName, division)
+          const boothGroups: { [key: string]: Array<{ party: string, votes: number }> } = {};
+
           booth.results.forEach((result: any, rIndex: number) => {
             const rCtx = `${ctx} -> Result [${rIndex}]`;
             
@@ -114,9 +118,53 @@ if (!fs.existsSync(boothsPath)) {
             if (typeof result.percentage !== 'number' || isNaN(result.percentage)) logError(rCtx, 'Missing or invalid "percentage".');
             
             if (result.division && typeof result.division !== 'string') logError(rCtx, 'Invalid "division".');
+
+            // Populate booth groups for duplicates check
+            if (result.electionId && result.contestName) {
+              const division = result.division || '';
+              const groupKey = `${result.electionId}|${result.contestName}|${division}`;
+              if (!boothGroups[groupKey]) {
+                boothGroups[groupKey] = [];
+              }
+              boothGroups[groupKey].push({ party: result.party || '', votes: typeof result.votes === 'number' ? result.votes : 0 });
+            }
           });
+
+          // Compute signatures for this booth's results groups
+          for (const [groupKey, items] of Object.entries(boothGroups)) {
+            const sorted = [...items].sort((a, b) => a.party.localeCompare(b.party));
+            const totalVotes = sorted.reduce((sum, item) => sum + item.votes, 0);
+            
+            // Only check non-trivial result sets to avoid false positives on zeros/empty sets
+            if (totalVotes > 0) {
+              const sig = sorted.map(item => `${item.party}:${item.votes}`).join(',');
+              const fullKey = `${groupKey}|${sig}`;
+              if (!resultsSignatures.has(fullKey)) {
+                resultsSignatures.set(fullKey, []);
+              }
+              resultsSignatures.get(fullKey)!.push({ id: booth.id, name: booth.name });
+            }
+          }
         }
       });
+
+      // Check for duplicates
+      console.log('--- Checking for duplicate results across different booths ---');
+      let duplicateCount = 0;
+      for (const [fullKey, occurrences] of resultsSignatures.entries()) {
+        if (occurrences.length > 1) {
+          const parts = fullKey.split('|');
+          const electionId = parts[0];
+          const contestName = parts[1];
+          const division = parts[2];
+          const sig = parts[3];
+          
+          const boothList = occurrences.map(o => `"${o.name}" (ID: ${o.id})`).join(', ');
+          logError('Duplicate Results', `Identical results found in multiple booths for election "${electionId}", contest "${contestName}", division "${division}": [${sig}] in booths: ${boothList}`);
+          duplicateCount++;
+        }
+      }
+      console.log(`Duplicate check complete. Found ${duplicateCount} duplicate result sets.\n`);
     }
   } catch (e: any) {
     logError('booths.json', `Failed to parse JSON: ${e.message}`);

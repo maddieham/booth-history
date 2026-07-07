@@ -2201,13 +2201,6 @@
     ]
   },
   {
-    "slug": "enrolment-provisional",
-    "displayName": "Enrolment/Provisional",
-    "rawNames": [
-      "Enrolment/Provisional"
-    ]
-  },
-  {
     "slug": "declared-institution-north-ward",
     "displayName": "Declared Institution (North Ward)",
     "rawNames": [
@@ -2226,13 +2219,6 @@
     "displayName": "Postal (North Ward)",
     "rawNames": [
       "Postal (North Ward)"
-    ]
-  },
-  {
-    "slug": "postal",
-    "displayName": "Postal",
-    "rawNames": [
-      "Postal"
     ]
   },
   {
@@ -2261,6 +2247,132 @@
     "displayName": "Wyee Hall",
     "rawNames": [
       "Wyee Hall"
+    ]
+  },
+  {
+    "slug": "provisional-east-ward",
+    "displayName": "Provisional (East Ward)",
+    "rawNames": [
+      "Provisional (East Ward)"
+    ]
+  },
+  {
+    "slug": "postal-east-ward",
+    "displayName": "Postal (East Ward)",
+    "rawNames": [
+      "Postal (East Ward)"
+    ]
+  },
+  {
+    "slug": "provisional-west-ward",
+    "displayName": "Provisional (West Ward)",
+    "rawNames": [
+      "Provisional (West Ward)"
+    ]
+  },
+  {
+    "slug": "postal-west-ward",
+    "displayName": "Postal (West Ward)",
+    "rawNames": [
+      "Postal (West Ward)"
+    ]
+  },
+  {
+    "slug": "provisional-ward-1",
+    "displayName": "Provisional (Ward 1)",
+    "rawNames": [
+      "Provisional (Ward 1)"
+    ]
+  },
+  {
+    "slug": "postal-ward-1",
+    "displayName": "Postal (Ward 1)",
+    "rawNames": [
+      "Postal (Ward 1)"
+    ]
+  },
+  {
+    "slug": "provisional-ward-2",
+    "displayName": "Provisional (Ward 2)",
+    "rawNames": [
+      "Provisional (Ward 2)"
+    ]
+  },
+  {
+    "slug": "postal-ward-2",
+    "displayName": "Postal (Ward 2)",
+    "rawNames": [
+      "Postal (Ward 2)"
+    ]
+  },
+  {
+    "slug": "provisional-ward-3",
+    "displayName": "Provisional (Ward 3)",
+    "rawNames": [
+      "Provisional (Ward 3)"
+    ]
+  },
+  {
+    "slug": "postal-ward-3",
+    "displayName": "Postal (Ward 3)",
+    "rawNames": [
+      "Postal (Ward 3)"
+    ]
+  },
+  {
+    "slug": "provisional-ward-4",
+    "displayName": "Provisional (Ward 4)",
+    "rawNames": [
+      "Provisional (Ward 4)"
+    ]
+  },
+  {
+    "slug": "postal-ward-4",
+    "displayName": "Postal (Ward 4)",
+    "rawNames": [
+      "Postal (Ward 4)"
+    ]
+  },
+  {
+    "slug": "declared-institution-east-ward",
+    "displayName": "Declared Institution (East Ward)",
+    "rawNames": [
+      "Declared Institution (East Ward)"
+    ]
+  },
+  {
+    "slug": "declared-institution-west-ward",
+    "displayName": "Declared Institution (West Ward)",
+    "rawNames": [
+      "Declared Institution (West Ward)"
+    ]
+  },
+  {
+    "slug": "declared-institution-ward-1",
+    "displayName": "Declared Institution (Ward 1)",
+    "rawNames": [
+      "Declared Institution (Ward 1)"
+    ]
+  },
+  {
+    "slug": "declared-institution-ward-2",
+    "displayName": "Declared Institution (Ward 2)",
+    "rawNames": [
+      "Declared Institution (Ward 2)"
+    ]
+  },
+  {
+    "slug": "declared-institution-ward-3",
+    "displayName": "Declared Institution (Ward 3)",
+    "rawNames": [
+      "Declared Institution (Ward 3)"
+    ]
+  },
+  {
+    "slug": "declared-institution-ward-4",
+    "displayName": "Declared Institution (Ward 4)",
+    "rawNames": [
+      "Declared Institution (Ward 4)"
     ]
   }
 ]

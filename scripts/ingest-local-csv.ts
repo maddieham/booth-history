@@ -39,6 +39,23 @@ function determineBoothType(name: string): "ordinary" | "pre-poll" | "postal" | 
   return 'ordinary';
 }
 
+function resolveSpecialBoothName(rawName: string, lgaName: string, wardName: string): string {
+  const normalized = rawName.toLowerCase();
+
+  let baseName = '';
+  if (normalized === 'declared institution') {
+    baseName = 'Declared Institution';
+  } else if (normalized === 'enrolment/provisional' || normalized === 'enrolment/namav') {
+    baseName = 'Provisional';
+  } else if (normalized === 'postal') {
+    baseName = 'Postal';
+  } else {
+    return rawName;
+  }
+
+  return `${baseName} (${wardName})`;
+}
+
 const csvDir = path.resolve(import.meta.dirname || '.', '../csv');
 const boothsPath = path.resolve(import.meta.dirname || '.', '../src/data/booths.json');
 const electionsPath = path.resolve(import.meta.dirname || '.', '../src/data/elections.json');
@@ -68,6 +85,27 @@ if (files.length === 0) {
   console.log('No CSV files found in csv/ directory.');
   process.exit(0);
 }
+
+// 1. Determine all electionIds we are going to ingest from the CSV files
+const electionIdsToIngest = new Set<string>();
+files.forEach(filename => {
+  const fileBase = path.basename(filename, '.csv');
+  const parts = fileBase.split('_');
+  if (parts.length >= 3) {
+    const year = parts[0];
+    const lgaRaw = parts[1];
+    let electionId = `${year}-local-${lgaRaw.toLowerCase()}`;
+    if (electionId.endsWith('-lakemacquarie')) {
+      electionId = `${year}-lake-macquarie-local`;
+    }
+    electionIdsToIngest.add(electionId);
+  }
+});
+
+console.log('Clearing old councillor results for elections:', Array.from(electionIdsToIngest));
+booths.forEach(b => {
+  b.results = b.results.filter(r => !(electionIdsToIngest.has(r.electionId) && r.contestName === 'Councillor'));
+});
 
 files.forEach(filename => {
   console.log(`\nProcessing file: ${filename}`);
@@ -221,30 +259,31 @@ files.forEach(filename => {
       continue;
     }
 
+    const resolvedBoothName = resolveSpecialBoothName(rawBoothName, lgaName, wardName);
     const fullLgaName = lgaName.toLowerCase().includes('lake') ? "Lake Macquarie City Council" : "City of Newcastle";
-    const boothType = determineBoothType(rawBoothName);
+    const boothType = determineBoothType(resolvedBoothName);
 
     // Try to find the booth in the existing booths.json
     let booth: PollingPlace | undefined;
     if (boothType === 'ordinary') {
-      booth = booths.find(b => b.name.toLowerCase() === rawBoothName.toLowerCase() && (!b.type || b.type === 'ordinary'));
+      booth = booths.find(b => b.name.toLowerCase() === resolvedBoothName.toLowerCase() && (!b.type || b.type === 'ordinary'));
       if (!booth) {
         booth = booths.find(b =>
-          (b.name.toLowerCase().includes(rawBoothName.toLowerCase()) ||
-            rawBoothName.toLowerCase().includes(b.name.toLowerCase())) &&
+          (b.name.toLowerCase().includes(resolvedBoothName.toLowerCase()) ||
+            resolvedBoothName.toLowerCase().includes(b.name.toLowerCase())) &&
           (!b.type || b.type === 'ordinary')
         );
       }
     } else {
       booth = booths.find(b => 
-        b.name.toLowerCase() === rawBoothName.toLowerCase() && 
+        b.name.toLowerCase() === resolvedBoothName.toLowerCase() && 
         b.type === boothType && 
         b.lga === fullLgaName
       );
       if (!booth) {
         booth = booths.find(b =>
-          (b.name.toLowerCase().includes(rawBoothName.toLowerCase()) ||
-            rawBoothName.toLowerCase().includes(b.name.toLowerCase())) &&
+          (b.name.toLowerCase().includes(resolvedBoothName.toLowerCase()) ||
+            resolvedBoothName.toLowerCase().includes(b.name.toLowerCase())) &&
           b.type === boothType &&
           b.lga === fullLgaName
         );
@@ -298,8 +337,8 @@ files.forEach(filename => {
       const newBoothId = String(maxId + 1);
       const newBooth: PollingPlace = {
         id: newBoothId,
-        name: rawBoothName,
-        division: "Newcastle", // Default current division/electorate
+        name: resolvedBoothName,
+        division: fullLgaName === "Lake Macquarie City Council" ? "Lake Macquarie" : "Newcastle",
         lga: fullLgaName,
         lat: -32.9272,
         lng: 151.7761,
@@ -315,6 +354,10 @@ files.forEach(filename => {
   console.log(`Created new: ${createdCount} booths.`);
 });
 
+// Filter out any booths that have empty results array
+const activeBooths = booths.filter(b => b.results && b.results.length > 0);
+console.log(`\nRemoving ${booths.length - activeBooths.length} empty booths. Active booths count: ${activeBooths.length}`);
+
 // Save booths back to booths.json
-fs.writeFileSync(boothsPath, JSON.stringify(booths, null, 2), 'utf-8');
-console.log('\nSuccessfully saved results to booths.json.');
+fs.writeFileSync(boothsPath, JSON.stringify(activeBooths, null, 2), 'utf-8');
+console.log('Successfully saved results to booths.json.');

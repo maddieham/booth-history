@@ -15198,134 +15198,6 @@
     "type": "pre-poll",
     "results": [
       {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 18,
-        "percentage": 16.67,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 40,
-        "percentage": 37.04,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 16,
-        "percentage": 14.81,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 34,
-        "percentage": 31.48,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 25,
-        "percentage": 26.88,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 38,
-        "percentage": 40.86,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 18,
-        "percentage": 19.35,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 12,
-        "percentage": 12.9,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 226,
-        "percentage": 10.4,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 824,
-        "percentage": 37.9,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 343,
-        "percentage": 15.78,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 781,
-        "percentage": 35.92,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 8,
-        "percentage": 12.5,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 24,
-        "percentage": 37.5,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 19,
-        "percentage": 29.69,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 13,
-        "percentage": 20.31,
-        "division": "Ward 4"
-      },
-      {
         "electionId": "2026-by-election-newcastle",
         "contestName": "Lord Mayoral",
         "party": "GRN",
@@ -15734,102 +15606,6 @@
     "type": "pre-poll",
     "results": [
       {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 12,
-        "percentage": 14.46,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 25,
-        "percentage": 30.12,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 23,
-        "percentage": 27.71,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 23,
-        "percentage": 27.71,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 115,
-        "percentage": 14.56,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 316,
-        "percentage": 40,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 195,
-        "percentage": 24.68,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 164,
-        "percentage": 20.76,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 8,
-        "percentage": 8.7,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 37,
-        "percentage": 40.22,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 14,
-        "percentage": 15.22,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 33,
-        "percentage": 35.87,
-        "division": "West Ward"
-      },
-      {
         "electionId": "2026-by-election-newcastle",
         "contestName": "Lord Mayoral",
         "party": "GRN",
@@ -16194,102 +15970,6 @@
     "type": "other-dec",
     "results": [
       {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 6,
-        "percentage": 3,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 97,
-        "percentage": 48.5,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 51,
-        "percentage": 25.5,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 46,
-        "percentage": 23,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 2,
-        "percentage": 4.88,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 16,
-        "percentage": 39.02,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 15,
-        "percentage": 36.59,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 8,
-        "percentage": 19.51,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 9,
-        "percentage": 4.59,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 62,
-        "percentage": 31.63,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 68,
-        "percentage": 34.69,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 57,
-        "percentage": 29.08,
-        "division": "West Ward"
-      },
-      {
         "electionId": "2026-by-election-newcastle",
         "contestName": "Lord Mayoral",
         "party": "GRN",
@@ -16416,134 +16096,6 @@
         "votes": 122,
         "percentage": 33.61,
         "division": "Newcastle"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 6,
-        "percentage": 7.79,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 39,
-        "percentage": 50.65,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 21,
-        "percentage": 27.27,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 11,
-        "percentage": 14.29,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 11,
-        "percentage": 18.03,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 29,
-        "percentage": 47.54,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 18,
-        "percentage": 29.51,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 3,
-        "percentage": 4.92,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 10,
-        "percentage": 8.93,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 65,
-        "percentage": 58.04,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 0,
-        "percentage": 0,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 37,
-        "percentage": 33.04,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 5,
-        "percentage": 5,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 57,
-        "percentage": 57,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 31,
-        "percentage": 31,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 7,
-        "percentage": 7,
-        "division": "Ward 4"
       }
     ]
   },
@@ -16697,262 +16249,6 @@
     "lng": 151.7761,
     "type": "postal",
     "results": [
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 138,
-        "percentage": 11.39,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 390,
-        "percentage": 32.18,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 172,
-        "percentage": 14.19,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 512,
-        "percentage": 42.24,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 145,
-        "percentage": 11.51,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 460,
-        "percentage": 36.51,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 323,
-        "percentage": 25.63,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 332,
-        "percentage": 26.35,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 134,
-        "percentage": 8.39,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 646,
-        "percentage": 40.45,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 354,
-        "percentage": 22.17,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 463,
-        "percentage": 28.99,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 72,
-        "percentage": 5.14,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 599,
-        "percentage": 42.76,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 295,
-        "percentage": 21.06,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 435,
-        "percentage": 31.05,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 248,
-        "percentage": 13.85,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 567,
-        "percentage": 31.66,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 365,
-        "percentage": 20.38,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 611,
-        "percentage": 34.12,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 317,
-        "percentage": 16.01,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 618,
-        "percentage": 31.21,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 584,
-        "percentage": 29.49,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 461,
-        "percentage": 23.28,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 264,
-        "percentage": 13.77,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 727,
-        "percentage": 37.92,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 0,
-        "percentage": 0,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 926,
-        "percentage": 48.3,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 176,
-        "percentage": 9.33,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 799,
-        "percentage": 42.34,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 525,
-        "percentage": 27.82,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 387,
-        "percentage": 20.51,
-        "division": "Ward 4"
-      },
       {
         "electionId": "2026-by-election-newcastle",
         "contestName": "Lord Mayoral",
@@ -22996,198 +22292,6 @@
         "votes": 582,
         "percentage": 37.19,
         "division": "Charlestown"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 113,
-        "percentage": 4.57,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 1041,
-        "percentage": 42.06,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 713,
-        "percentage": 28.81,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 608,
-        "percentage": 24.57,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 178,
-        "percentage": 7.21,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 1049,
-        "percentage": 42.5,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 547,
-        "percentage": 22.16,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 694,
-        "percentage": 28.12,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 136,
-        "percentage": 5.94,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 653,
-        "percentage": 28.53,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 740,
-        "percentage": 32.33,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 760,
-        "percentage": 33.2,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 215,
-        "percentage": 5.71,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 1608,
-        "percentage": 42.7,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 1111,
-        "percentage": 29.5,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 832,
-        "percentage": 22.09,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 306,
-        "percentage": 8.58,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 1346,
-        "percentage": 37.72,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 978,
-        "percentage": 27.41,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 938,
-        "percentage": 26.29,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 168,
-        "percentage": 5.5,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 745,
-        "percentage": 24.39,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 810,
-        "percentage": 26.52,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 1331,
-        "percentage": 43.58,
-        "division": "West Ward"
       }
     ]
   },
@@ -28609,102 +27713,6 @@
         "votes": 5,
         "percentage": 71.43,
         "division": "Charlestown"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 6,
-        "percentage": 3,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 97,
-        "percentage": 48.5,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 51,
-        "percentage": 25.5,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 46,
-        "percentage": 23,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 2,
-        "percentage": 4.88,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 16,
-        "percentage": 39.02,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 15,
-        "percentage": 36.59,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 8,
-        "percentage": 19.51,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 9,
-        "percentage": 4.59,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 62,
-        "percentage": 31.63,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 68,
-        "percentage": 34.69,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 57,
-        "percentage": 29.08,
-        "division": "West Ward"
       }
     ]
   },
@@ -35636,358 +34644,6 @@
     ]
   },
   {
-    "id": "203",
-    "name": "Belmont Pre-Poll",
-    "suburb": "Belmont Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 26,
-        "percentage": 11.87,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 74,
-        "percentage": 33.79,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 61,
-        "percentage": 27.85,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 58,
-        "percentage": 26.48,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
-    "id": "204",
-    "name": "Cameron Park Pre-Poll",
-    "suburb": "Cameron Park Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 387,
-        "percentage": 8.34,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 2065,
-        "percentage": 44.49,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 1105,
-        "percentage": 23.8,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 1085,
-        "percentage": 23.37,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
-    "id": "205",
-    "name": "Charlestown Pre-Poll",
-    "suburb": "Charlestown Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 653,
-        "percentage": 14.2,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 1663,
-        "percentage": 36.15,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 1176,
-        "percentage": 25.57,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 1108,
-        "percentage": 24.09,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
-    "id": "206",
-    "name": "Cooranbong Pre-Poll",
-    "suburb": "Cooranbong Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 2,
-        "percentage": 13.33,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 9,
-        "percentage": 60,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 0,
-        "percentage": 0,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 4,
-        "percentage": 26.67,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
-    "id": "207",
-    "name": "Speers Point Pre-Poll",
-    "suburb": "Speers Point Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 222,
-        "percentage": 8.21,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 937,
-        "percentage": 34.65,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 842,
-        "percentage": 31.14,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 703,
-        "percentage": 26,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
-    "id": "208",
-    "name": "Swansea Pre-Poll",
-    "suburb": "Swansea Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 7,
-        "percentage": 10.45,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 19,
-        "percentage": 28.36,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 19,
-        "percentage": 28.36,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 22,
-        "percentage": 32.84,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
-    "id": "209",
-    "name": "Toronto Pre-Poll",
-    "suburb": "Toronto Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 8,
-        "percentage": 12.5,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 22,
-        "percentage": 34.38,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 15,
-        "percentage": 23.44,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 19,
-        "percentage": 29.69,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
-    "id": "210",
-    "name": "Wallsend Pre-Poll",
-    "suburb": "Wallsend Pre-Poll",
-    "division": "North Ward",
-    "lga": "Lake Macquarie City Council",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "pre-poll",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 115,
-        "percentage": 14.56,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 316,
-        "percentage": 40,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 195,
-        "percentage": 24.68,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 164,
-        "percentage": 20.76,
-        "division": "North Ward"
-      }
-    ]
-  },
-  {
     "id": "211",
     "name": "Declared Institution (North Ward)",
     "suburb": "Declared Institution (North Ward)",
@@ -36042,6 +34698,38 @@
     "type": "other-dec",
     "results": [
       {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 256,
+        "percentage": 18.47,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 585,
+        "percentage": 42.21,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 245,
+        "percentage": 17.68,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 300,
+        "percentage": 21.65,
+        "division": "North Ward"
+      },
+      {
         "electionId": "2024-lake-macquarie-local",
         "contestName": "Councillor",
         "party": "GRN",
@@ -36085,6 +34773,38 @@
     "lng": 151.7761,
     "type": "postal",
     "results": [
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 178,
+        "percentage": 7.21,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 1049,
+        "percentage": 42.5,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 547,
+        "percentage": 22.16,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 694,
+        "percentage": 28.12,
+        "division": "North Ward"
+      },
       {
         "electionId": "2024-lake-macquarie-local",
         "contestName": "Councillor",
@@ -36720,241 +35440,6 @@
     ]
   },
   {
-    "id": "219",
-    "name": "Enrolment/NAMAV",
-    "suburb": "Enrolment/NAMAV",
-    "division": "Newcastle",
-    "lga": "City of Newcastle",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "results": [
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 169,
-        "percentage": 14.86,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 437,
-        "percentage": 38.43,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 242,
-        "percentage": 21.28,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 289,
-        "percentage": 25.42,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 256,
-        "percentage": 18.47,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 585,
-        "percentage": 42.21,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 245,
-        "percentage": 17.68,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 300,
-        "percentage": 21.65,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 187,
-        "percentage": 13.58,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 483,
-        "percentage": 35.08,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 331,
-        "percentage": 24.04,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 376,
-        "percentage": 27.31,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 271,
-        "percentage": 25.93,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 372,
-        "percentage": 35.6,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 138,
-        "percentage": 13.21,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 264,
-        "percentage": 25.26,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 316,
-        "percentage": 30.01,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 424,
-        "percentage": 40.27,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 162,
-        "percentage": 15.38,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 151,
-        "percentage": 14.34,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 194,
-        "percentage": 19.64,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 464,
-        "percentage": 46.96,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 142,
-        "percentage": 14.37,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 188,
-        "percentage": 19.03,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 162,
-        "percentage": 17.48,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 463,
-        "percentage": 49.95,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 134,
-        "percentage": 14.46,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 168,
-        "percentage": 18.12,
-        "division": "Ward 4"
-      }
-    ]
-  },
-  {
     "id": "220",
     "name": "iVote",
     "suburb": "iVote",
@@ -37261,242 +35746,6 @@
         "votes": 51,
         "percentage": 21.7,
         "division": "Ward 3"
-      }
-    ]
-  },
-  {
-    "id": "222",
-    "name": "Enrolment/Provisional",
-    "suburb": "Enrolment/Provisional",
-    "division": "Newcastle",
-    "lga": "City of Newcastle",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "other-dec",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 171,
-        "percentage": 17.26,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 381,
-        "percentage": 38.45,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 220,
-        "percentage": 22.2,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 219,
-        "percentage": 22.1,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 316,
-        "percentage": 23.89,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 441,
-        "percentage": 33.33,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 226,
-        "percentage": 17.08,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 340,
-        "percentage": 25.7,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 142,
-        "percentage": 13.71,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 244,
-        "percentage": 23.55,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 177,
-        "percentage": 17.08,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 473,
-        "percentage": 45.66,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 393,
-        "percentage": 35.92,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 352,
-        "percentage": 32.18,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 155,
-        "percentage": 14.17,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 194,
-        "percentage": 17.73,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 354,
-        "percentage": 35.58,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 297,
-        "percentage": 29.85,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 236,
-        "percentage": 23.72,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 108,
-        "percentage": 10.85,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 340,
-        "percentage": 37.99,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 347,
-        "percentage": 38.77,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 0,
-        "percentage": 0,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 208,
-        "percentage": 23.24,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 215,
-        "percentage": 23.37,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 375,
-        "percentage": 40.76,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 207,
-        "percentage": 22.5,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 123,
-        "percentage": 13.37,
-        "division": "Ward 4"
       }
     ]
   },
@@ -45550,370 +43799,6 @@
     ]
   },
   {
-    "id": "279",
-    "name": "Postal",
-    "suburb": "Postal",
-    "division": "Newcastle",
-    "lga": "City of Newcastle",
-    "lat": -32.9272,
-    "lng": 151.7761,
-    "type": "postal",
-    "results": [
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 215,
-        "percentage": 5.71,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 1608,
-        "percentage": 42.7,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 1111,
-        "percentage": 29.5,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 832,
-        "percentage": 22.09,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 306,
-        "percentage": 8.58,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 1346,
-        "percentage": 37.72,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 978,
-        "percentage": 27.41,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 938,
-        "percentage": 26.29,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 168,
-        "percentage": 5.5,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 745,
-        "percentage": 24.39,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 810,
-        "percentage": 26.52,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2024-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 1331,
-        "percentage": 43.58,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 138,
-        "percentage": 11.39,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 390,
-        "percentage": 32.18,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 172,
-        "percentage": 14.19,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 512,
-        "percentage": 42.24,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 145,
-        "percentage": 11.51,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 460,
-        "percentage": 36.51,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 323,
-        "percentage": 25.63,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 332,
-        "percentage": 26.35,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 134,
-        "percentage": 8.39,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 646,
-        "percentage": 40.45,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 354,
-        "percentage": 22.17,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 463,
-        "percentage": 28.99,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 72,
-        "percentage": 5.14,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 599,
-        "percentage": 42.76,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 295,
-        "percentage": 21.06,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2021-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 435,
-        "percentage": 31.05,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 248,
-        "percentage": 13.85,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 567,
-        "percentage": 31.66,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 365,
-        "percentage": 20.38,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 611,
-        "percentage": 34.12,
-        "division": "Ward 1"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 317,
-        "percentage": 16.01,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 618,
-        "percentage": 31.21,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 584,
-        "percentage": 29.49,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 461,
-        "percentage": 23.28,
-        "division": "Ward 2"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 264,
-        "percentage": 13.77,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 727,
-        "percentage": 37.92,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 0,
-        "percentage": 0,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 926,
-        "percentage": 48.3,
-        "division": "Ward 3"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 176,
-        "percentage": 9.33,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 799,
-        "percentage": 42.34,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 525,
-        "percentage": 27.82,
-        "division": "Ward 4"
-      },
-      {
-        "electionId": "2024-local-newcastle",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 387,
-        "percentage": 20.51,
-        "division": "Ward 4"
-      }
-    ]
-  },
-  {
     "id": "280",
     "name": "Newcastle NEWCASTLE PPVC",
     "suburb": "Newcastle",
@@ -47815,38 +45700,6 @@
     "lng": 151.7761,
     "results": [
       {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 32,
-        "percentage": 7.62,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 167,
-        "percentage": 39.76,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 129,
-        "percentage": 30.71,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 92,
-        "percentage": 21.9,
-        "division": "East Ward"
-      },
-      {
         "electionId": "2013-federal",
         "contestName": "House of Representatives",
         "party": "GRN",
@@ -48005,6 +45858,38 @@
         "votes": 37,
         "percentage": 13.31,
         "division": "Shortland"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 32,
+        "percentage": 7.62,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 167,
+        "percentage": 39.76,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 129,
+        "percentage": 30.71,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 92,
+        "percentage": 21.9,
+        "division": "East Ward"
       }
     ]
   },
@@ -53659,38 +51544,6 @@
     "lng": 151.7761,
     "results": [
       {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 99,
-        "percentage": 8.49,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 418,
-        "percentage": 35.85,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 385,
-        "percentage": 33.02,
-        "division": "East Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 264,
-        "percentage": 22.64,
-        "division": "East Ward"
-      },
-      {
         "electionId": "2013-federal",
         "contestName": "House of Representatives",
         "party": "GRN",
@@ -53849,6 +51702,38 @@
         "votes": 89,
         "percentage": 18.66,
         "division": "Shortland"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 99,
+        "percentage": 8.49,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 418,
+        "percentage": 35.85,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 385,
+        "percentage": 33.02,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 264,
+        "percentage": 22.64,
+        "division": "East Ward"
       }
     ]
   },
@@ -56262,70 +54147,6 @@
     "lng": 151.7761,
     "results": [
       {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 21,
-        "percentage": 10.77,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 68,
-        "percentage": 34.87,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 55,
-        "percentage": 28.21,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 51,
-        "percentage": 26.15,
-        "division": "North Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "GRN",
-        "votes": 4,
-        "percentage": 7.55,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "ALP",
-        "votes": 21,
-        "percentage": 39.62,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "LNP",
-        "votes": 11,
-        "percentage": 20.75,
-        "division": "West Ward"
-      },
-      {
-        "electionId": "2021-lake-macquarie-local",
-        "contestName": "Councillor",
-        "party": "OTH",
-        "votes": 17,
-        "percentage": 32.08,
-        "division": "West Ward"
-      },
-      {
         "electionId": "2016-federal",
         "contestName": "House of Representatives",
         "party": "GRN",
@@ -56452,6 +54273,70 @@
         "votes": 302,
         "percentage": 17.29,
         "division": "Shortland"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 21,
+        "percentage": 10.77,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 68,
+        "percentage": 34.87,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 55,
+        "percentage": 28.21,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 51,
+        "percentage": 26.15,
+        "division": "North Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 4,
+        "percentage": 7.55,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 21,
+        "percentage": 39.62,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 11,
+        "percentage": 20.75,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 17,
+        "percentage": 32.08,
+        "division": "West Ward"
       }
     ]
   },
@@ -57865,13 +55750,45 @@
   },
   {
     "id": "393",
-    "name": "Enrolment/Provisional",
-    "division": "Newcastle",
+    "name": "Provisional (East Ward)",
+    "division": "Lake Macquarie",
     "lga": "Lake Macquarie City Council",
     "lat": -32.9272,
     "lng": 151.7761,
     "type": "other-dec",
     "results": [
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 169,
+        "percentage": 14.86,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 437,
+        "percentage": 38.43,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 242,
+        "percentage": 21.28,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 289,
+        "percentage": 25.42,
+        "division": "East Ward"
+      },
       {
         "electionId": "2024-lake-macquarie-local",
         "contestName": "Councillor",
@@ -57903,38 +55820,124 @@
         "votes": 219,
         "percentage": 22.1,
         "division": "East Ward"
+      }
+    ]
+  },
+  {
+    "id": "394",
+    "name": "Postal (East Ward)",
+    "division": "Lake Macquarie",
+    "lga": "Lake Macquarie City Council",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "postal",
+    "results": [
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 113,
+        "percentage": 4.57,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 1041,
+        "percentage": 42.06,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 713,
+        "percentage": 28.81,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 608,
+        "percentage": 24.57,
+        "division": "East Ward"
       },
       {
         "electionId": "2024-lake-macquarie-local",
         "contestName": "Councillor",
         "party": "GRN",
-        "votes": 316,
-        "percentage": 23.89,
-        "division": "North Ward"
+        "votes": 215,
+        "percentage": 5.71,
+        "division": "East Ward"
       },
       {
         "electionId": "2024-lake-macquarie-local",
         "contestName": "Councillor",
         "party": "ALP",
-        "votes": 441,
-        "percentage": 33.33,
-        "division": "North Ward"
+        "votes": 1608,
+        "percentage": 42.7,
+        "division": "East Ward"
       },
       {
         "electionId": "2024-lake-macquarie-local",
         "contestName": "Councillor",
         "party": "LNP",
-        "votes": 226,
-        "percentage": 17.08,
-        "division": "North Ward"
+        "votes": 1111,
+        "percentage": 29.5,
+        "division": "East Ward"
       },
       {
         "electionId": "2024-lake-macquarie-local",
         "contestName": "Councillor",
         "party": "OTH",
-        "votes": 340,
-        "percentage": 25.7,
-        "division": "North Ward"
+        "votes": 832,
+        "percentage": 22.09,
+        "division": "East Ward"
+      }
+    ]
+  },
+  {
+    "id": "395",
+    "name": "Provisional (West Ward)",
+    "division": "Lake Macquarie",
+    "lga": "Lake Macquarie City Council",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 187,
+        "percentage": 13.58,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 483,
+        "percentage": 35.08,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 331,
+        "percentage": 24.04,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 376,
+        "percentage": 27.31,
+        "division": "West Ward"
       },
       {
         "electionId": "2024-lake-macquarie-local",
@@ -57967,6 +55970,939 @@
         "votes": 473,
         "percentage": 45.66,
         "division": "West Ward"
+      }
+    ]
+  },
+  {
+    "id": "396",
+    "name": "Postal (West Ward)",
+    "division": "Lake Macquarie",
+    "lga": "Lake Macquarie City Council",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "postal",
+    "results": [
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 136,
+        "percentage": 5.94,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 653,
+        "percentage": 28.53,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 740,
+        "percentage": 32.33,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2021-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 760,
+        "percentage": 33.2,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 168,
+        "percentage": 5.5,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 745,
+        "percentage": 24.39,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 810,
+        "percentage": 26.52,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 1331,
+        "percentage": 43.58,
+        "division": "West Ward"
+      }
+    ]
+  },
+  {
+    "id": "397",
+    "name": "Provisional (Ward 1)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 271,
+        "percentage": 25.93,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 372,
+        "percentage": 35.6,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 138,
+        "percentage": 13.21,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 264,
+        "percentage": 25.26,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 393,
+        "percentage": 35.92,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 352,
+        "percentage": 32.18,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 155,
+        "percentage": 14.17,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 194,
+        "percentage": 17.73,
+        "division": "Ward 1"
+      }
+    ]
+  },
+  {
+    "id": "398",
+    "name": "Postal (Ward 1)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "postal",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 138,
+        "percentage": 11.39,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 390,
+        "percentage": 32.18,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 172,
+        "percentage": 14.19,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 512,
+        "percentage": 42.24,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 248,
+        "percentage": 13.85,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 567,
+        "percentage": 31.66,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 365,
+        "percentage": 20.38,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 611,
+        "percentage": 34.12,
+        "division": "Ward 1"
+      }
+    ]
+  },
+  {
+    "id": "399",
+    "name": "Provisional (Ward 2)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 316,
+        "percentage": 30.01,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 424,
+        "percentage": 40.27,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 162,
+        "percentage": 15.38,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 151,
+        "percentage": 14.34,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 354,
+        "percentage": 35.58,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 297,
+        "percentage": 29.85,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 236,
+        "percentage": 23.72,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 108,
+        "percentage": 10.85,
+        "division": "Ward 2"
+      }
+    ]
+  },
+  {
+    "id": "400",
+    "name": "Postal (Ward 2)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "postal",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 145,
+        "percentage": 11.51,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 460,
+        "percentage": 36.51,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 323,
+        "percentage": 25.63,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 332,
+        "percentage": 26.35,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 317,
+        "percentage": 16.01,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 618,
+        "percentage": 31.21,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 584,
+        "percentage": 29.49,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 461,
+        "percentage": 23.28,
+        "division": "Ward 2"
+      }
+    ]
+  },
+  {
+    "id": "401",
+    "name": "Provisional (Ward 3)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 194,
+        "percentage": 19.64,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 464,
+        "percentage": 46.96,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 142,
+        "percentage": 14.37,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 188,
+        "percentage": 19.03,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 340,
+        "percentage": 37.99,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 347,
+        "percentage": 38.77,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 0,
+        "percentage": 0,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 208,
+        "percentage": 23.24,
+        "division": "Ward 3"
+      }
+    ]
+  },
+  {
+    "id": "402",
+    "name": "Postal (Ward 3)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "postal",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 134,
+        "percentage": 8.39,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 646,
+        "percentage": 40.45,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 354,
+        "percentage": 22.17,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 463,
+        "percentage": 28.99,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 264,
+        "percentage": 13.77,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 727,
+        "percentage": 37.92,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 0,
+        "percentage": 0,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 926,
+        "percentage": 48.3,
+        "division": "Ward 3"
+      }
+    ]
+  },
+  {
+    "id": "403",
+    "name": "Provisional (Ward 4)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 162,
+        "percentage": 17.48,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 463,
+        "percentage": 49.95,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 134,
+        "percentage": 14.46,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 168,
+        "percentage": 18.12,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 215,
+        "percentage": 23.37,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 375,
+        "percentage": 40.76,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 207,
+        "percentage": 22.5,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 123,
+        "percentage": 13.37,
+        "division": "Ward 4"
+      }
+    ]
+  },
+  {
+    "id": "404",
+    "name": "Postal (Ward 4)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "postal",
+    "results": [
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 72,
+        "percentage": 5.14,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 599,
+        "percentage": 42.76,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 295,
+        "percentage": 21.06,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2021-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 435,
+        "percentage": 31.05,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 176,
+        "percentage": 9.33,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 799,
+        "percentage": 42.34,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 525,
+        "percentage": 27.82,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 387,
+        "percentage": 20.51,
+        "division": "Ward 4"
+      }
+    ]
+  },
+  {
+    "id": "405",
+    "name": "Declared Institution (East Ward)",
+    "division": "Lake Macquarie",
+    "lga": "Lake Macquarie City Council",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 6,
+        "percentage": 3,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 97,
+        "percentage": 48.5,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 51,
+        "percentage": 25.5,
+        "division": "East Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 46,
+        "percentage": 23,
+        "division": "East Ward"
+      }
+    ]
+  },
+  {
+    "id": "406",
+    "name": "Declared Institution (West Ward)",
+    "division": "Lake Macquarie",
+    "lga": "Lake Macquarie City Council",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 9,
+        "percentage": 4.59,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 62,
+        "percentage": 31.63,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 68,
+        "percentage": 34.69,
+        "division": "West Ward"
+      },
+      {
+        "electionId": "2024-lake-macquarie-local",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 57,
+        "percentage": 29.08,
+        "division": "West Ward"
+      }
+    ]
+  },
+  {
+    "id": "407",
+    "name": "Declared Institution (Ward 1)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 6,
+        "percentage": 7.79,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 39,
+        "percentage": 50.65,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 21,
+        "percentage": 27.27,
+        "division": "Ward 1"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 11,
+        "percentage": 14.29,
+        "division": "Ward 1"
+      }
+    ]
+  },
+  {
+    "id": "408",
+    "name": "Declared Institution (Ward 2)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 11,
+        "percentage": 18.03,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 29,
+        "percentage": 47.54,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 18,
+        "percentage": 29.51,
+        "division": "Ward 2"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 3,
+        "percentage": 4.92,
+        "division": "Ward 2"
+      }
+    ]
+  },
+  {
+    "id": "409",
+    "name": "Declared Institution (Ward 3)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 10,
+        "percentage": 8.93,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 65,
+        "percentage": 58.04,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 0,
+        "percentage": 0,
+        "division": "Ward 3"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 37,
+        "percentage": 33.04,
+        "division": "Ward 3"
+      }
+    ]
+  },
+  {
+    "id": "410",
+    "name": "Declared Institution (Ward 4)",
+    "division": "Newcastle",
+    "lga": "City of Newcastle",
+    "lat": -32.9272,
+    "lng": 151.7761,
+    "type": "other-dec",
+    "results": [
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "GRN",
+        "votes": 5,
+        "percentage": 5,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "ALP",
+        "votes": 57,
+        "percentage": 57,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "LNP",
+        "votes": 31,
+        "percentage": 31,
+        "division": "Ward 4"
+      },
+      {
+        "electionId": "2024-local-newcastle",
+        "contestName": "Councillor",
+        "party": "OTH",
+        "votes": 7,
+        "percentage": 7,
+        "division": "Ward 4"
       }
     ]
   }

@@ -17,6 +17,18 @@ if (fs.existsSync(groupsPath)) {
   }
 }
 
+// Clean up existing groups by filtering rawNames against active booth names
+const activeBoothNames = new Set(booths.map(b => b.name.toLowerCase()));
+const initialGroupsCount = groups.length;
+groups = groups.map(g => {
+  if (Array.isArray(g.rawNames)) {
+    g.rawNames = g.rawNames.filter(name => activeBoothNames.has(name.toLowerCase()));
+  }
+  return g;
+}).filter(g => Array.isArray(g.rawNames) && g.rawNames.length > 0);
+
+console.log(`Cleaned up booth groups: removed ${initialGroupsCount - groups.length} empty groups.`);
+
 // Build a Set of all names already covered by existing groups (case-insensitive for robustness)
 const coveredNames = new Set<string>();
 groups.forEach(g => {
