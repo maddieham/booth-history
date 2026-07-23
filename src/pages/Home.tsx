@@ -3,9 +3,11 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { Search, ChevronRight, Vote } from 'lucide-react';
 import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 
 export default function Home() {
+  usePageTitle();
   const [searchParams, setSearchParams] = useSearchParams();
   const search = searchParams.get('q') || '';
   const levelFilter = (searchParams.get('level') || 'all') as 'all' | 'local' | 'state' | 'federal';

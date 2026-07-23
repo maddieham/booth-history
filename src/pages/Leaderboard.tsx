@@ -14,6 +14,7 @@ import { ArrowUpDown, ArrowUp, ArrowDown, Award, Filter, Search, ChevronLeft, Ch
 import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
 import type { Election } from '../types';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 type LeaderboardRow = {
   boothId: string;
@@ -52,6 +53,7 @@ const getElectionDisplayName = (row: LeaderboardRow) => {
 };
 
 export default function Leaderboard() {
+  usePageTitle('Leaderboard');
   // Filter States
   const [showSpecialCategories, setShowSpecialCategories] = useState(false);
   const [hideSmallBooths, setHideSmallBooths] = useState(true);

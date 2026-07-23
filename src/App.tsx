@@ -73,10 +73,7 @@ function App() {
 
         {/* Footer */}
         <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
-          <p>Data compiled by Madeleine Ham •{' '}
-            <Link to="/completeness" className="text-greens-600 hover:underline font-semibold">
-              Booth Matrix
-            </Link>
+          <p>Data compiled by Madeleine Ham
           </p>
         </footer>
       </div>

@@ -4,6 +4,7 @@ import { ArrowLeft, Calendar, BarChart3, Trophy, SlidersHorizontal, ArrowUp, Arr
 import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
 import type { PollingPlace, Election } from '../types';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 const getContestKey = (contest: { contestName: string; division: string }) => {
   return `${contest.contestName}-${contest.division}`.toLowerCase().replace(/\s+/g, '-');
@@ -19,6 +20,8 @@ export default function ElectionDetail() {
   const election = useMemo(() => {
     return (electionsData as Election[]).find(e => e.id === id);
   }, [id]);
+
+  usePageTitle(election?.name || 'Election Not Found');
 
   const activeContestKey = searchParams.get('contest') || '';
 

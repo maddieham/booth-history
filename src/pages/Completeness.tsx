@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import { getGroupedBooths } from '../utils';
 import electionsData from '../data/elections.json';
 import type { Election } from '../types';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export default function Completeness() {
+  usePageTitle('Data Completeness');
   const [showSpecialCategories, setShowSpecialCategories] = useState(false);
   const elections = electionsData as Election[];
 

@@ -15,6 +15,7 @@ import boothGroupsData from '../data/booth-groups.json';
 import boothsData from '../data/booths.json';
 import electionsData from '../data/elections.json';
 import type { PollingPlace, Election, BoothGroup, ContestResult } from '../types';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 const getContestDisplayName = (contestName: string) => {
   if (contestName.toLowerCase().includes('mayoral') || contestName.toLowerCase().includes('mayor')) {
@@ -58,6 +59,8 @@ export default function BoothDetail() {
     }
     return undefined;
   }, [id, group]);
+
+  usePageTitle(booth?.name || 'Booth Not Found');
 
   const electionsMap = useMemo(() => {
     const map = new Map<string, Election>();

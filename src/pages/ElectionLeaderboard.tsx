@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpDown, ArrowUp, ArrowDown, BarChart3, Filter } from 'lucide-react';
 import summariesData from '../data/election-summaries.json';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -46,6 +47,7 @@ type SortField = 'grnPct' | 'grnVotes' | 'year' | 'totalVotes';
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function ElectionLeaderboard() {
+  usePageTitle('Elections Leaderboard');
   const allSummaries = summariesData as ElectionSummary[];
 
   // ── Filter state ──────────────────────────────────────────────────────────
