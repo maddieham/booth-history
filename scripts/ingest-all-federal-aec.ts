@@ -49,7 +49,10 @@ if (!fs.existsSync(boothsPath)) {
 }
 let booths: PollingPlace[] = JSON.parse(fs.readFileSync(boothsPath, 'utf-8'));
 
-const targetYears = [2013, 2016, 2019, 2022, 2025];
+// 2013 is intentionally excluded and removed from the active dataset (many of its booths
+// belong to pre-redistribution electorates with no later equivalent). To restore it, see
+// archive/2013-federal.json and re-add 2013 here - aec-csv/2013.csv is still the raw source.
+const targetYears = [2016, 2019, 2022, 2025];
 
 // Clear existing federal election results for the target years to prevent duplicates
 booths.forEach(b => {

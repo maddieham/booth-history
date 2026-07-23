@@ -15,7 +15,7 @@ export default function Home() {
   const [showSpecialCategories, setShowSpecialCategories] = useState(false);
 
   const booths = useMemo(() => getGroupedBooths(), []);
-  
+
   const electionsById = useMemo(() => {
     const map = new Map<string, any>();
     (electionsData as any[]).forEach(e => {
@@ -136,11 +136,10 @@ export default function Home() {
                 <button
                   key={lvl}
                   onClick={() => handleLevelChange(lvl)}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all ${
-                    levelFilter === lvl
-                      ? 'bg-white text-slate-900 shadow-sm'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
-                  }`}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all ${levelFilter === lvl
+                    ? 'bg-white text-slate-900 shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
+                    }`}
                 >
                   {lvl === 'all' ? 'All Levels' : lvl.charAt(0).toUpperCase() + lvl.slice(1)}
                 </button>
@@ -217,7 +216,7 @@ export default function Home() {
                         </span>
                       )}
                       <span className="bg-slate-100 text-slate-600 border border-slate-200 text-[10px] px-1.5 py-0.5 rounded font-mono font-semibold" title="Elections with data / total registered elections">
-                        {uniqueElectionsCount}/{totalElectionsCount} elections
+                        {uniqueElectionsCount} {uniqueElectionsCount === 1 ? 'election' : 'elections'}
                       </span>
                     </div>
 

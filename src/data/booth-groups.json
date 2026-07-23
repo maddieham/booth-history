@@ -1436,13 +1436,6 @@
     ]
   },
   {
-    "slug": "birmingham-gardens",
-    "displayName": "Birmingham Gardens",
-    "rawNames": [
-      "Birmingham Gardens"
-    ]
-  },
-  {
     "slug": "blv-newcastle-ppvc",
     "displayName": "BLV Newcastle PPVC",
     "rawNames": [
@@ -1472,45 +1465,10 @@
     ]
   },
   {
-    "slug": "jesmond",
-    "displayName": "Jesmond",
-    "rawNames": [
-      "Jesmond"
-    ]
-  },
-  {
     "slug": "kotara-east",
     "displayName": "Kotara East",
     "rawNames": [
       "Kotara East"
-    ]
-  },
-  {
-    "slug": "lambton-newcastle",
-    "displayName": "Lambton (Newcastle)",
-    "rawNames": [
-      "Lambton (Newcastle)"
-    ]
-  },
-  {
-    "slug": "merewether-west",
-    "displayName": "Merewether West",
-    "rawNames": [
-      "Merewether West"
-    ]
-  },
-  {
-    "slug": "somerset",
-    "displayName": "Somerset",
-    "rawNames": [
-      "Somerset"
-    ]
-  },
-  {
-    "slug": "stockton-south",
-    "displayName": "Stockton South",
-    "rawNames": [
-      "Stockton South"
     ]
   },
   {
@@ -1526,41 +1484,6 @@
     "rawNames": [
       "Tarro",
       "Tarro Hall"
-    ]
-  },
-  {
-    "slug": "thornton",
-    "displayName": "Thornton",
-    "rawNames": [
-      "Thornton"
-    ]
-  },
-  {
-    "slug": "waratah-east",
-    "displayName": "Waratah East",
-    "rawNames": [
-      "Waratah East"
-    ]
-  },
-  {
-    "slug": "waratah-south",
-    "displayName": "Waratah South",
-    "rawNames": [
-      "Waratah South"
-    ]
-  },
-  {
-    "slug": "williamtown",
-    "displayName": "Williamtown",
-    "rawNames": [
-      "Williamtown"
-    ]
-  },
-  {
-    "slug": "woodberry",
-    "displayName": "Woodberry",
-    "rawNames": [
-      "Woodberry"
     ]
   },
   {
@@ -1672,20 +1595,6 @@
     ]
   },
   {
-    "slug": "charmhaven",
-    "displayName": "Charmhaven",
-    "rawNames": [
-      "Charmhaven"
-    ]
-  },
-  {
-    "slug": "croudace-bay",
-    "displayName": "Croudace Bay",
-    "rawNames": [
-      "Croudace Bay"
-    ]
-  },
-  {
     "slug": "dudley",
     "displayName": "Dudley",
     "rawNames": [
@@ -1715,20 +1624,6 @@
     ]
   },
   {
-    "slug": "gateshead-west",
-    "displayName": "Gateshead West",
-    "rawNames": [
-      "Gateshead West"
-    ]
-  },
-  {
-    "slug": "gorokan-shortland",
-    "displayName": "Gorokan (Shortland)",
-    "rawNames": [
-      "Gorokan (Shortland)"
-    ]
-  },
-  {
     "slug": "gwandalan",
     "displayName": "Gwandalan",
     "rawNames": [
@@ -1755,13 +1650,6 @@
     "displayName": "Kotara South (Shortland)",
     "rawNames": [
       "Kotara South (Shortland)"
-    ]
-  },
-  {
-    "slug": "lake-haven",
-    "displayName": "Lake Haven",
-    "rawNames": [
-      "Lake Haven"
     ]
   },
   {
@@ -1804,13 +1692,6 @@
     "displayName": "Nords Wharf",
     "rawNames": [
       "Nords Wharf"
-    ]
-  },
-  {
-    "slug": "pelican",
-    "displayName": "Pelican",
-    "rawNames": [
-      "Pelican"
     ]
   },
   {
@@ -1867,13 +1748,6 @@
     "displayName": "Valentine",
     "rawNames": [
       "Valentine"
-    ]
-  },
-  {
-    "slug": "warners-bay-shortland",
-    "displayName": "Warners Bay (Shortland)",
-    "rawNames": [
-      "Warners Bay (Shortland)"
     ]
   },
   {
