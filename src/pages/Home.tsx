@@ -31,7 +31,6 @@ export default function Home() {
     });
     return map;
   }, []);
-  const totalElectionsCount = electionsData.length;
 
   const handleLevelChange = (level: 'all' | 'local' | 'state' | 'federal') => {
     setSearchParams(prev => {
